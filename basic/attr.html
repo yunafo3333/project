@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>attr 메소드</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+	<style>
+		a {text-decoration: none; color: inherit;}
+		body {margin: 50px auto; text-align: center;}
+		h1 {margin-bottom: 20px}
+		.btn floa{}
+		.btn a {
+			display: inline-block;
+			background-color: gray;
+			color: #fff;
+			margin: 0 2px;
+			font-size: 0px;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+		}
+		img {width: 500px; height: auto;}
+	</style>
+<body>
+<!--	<h1>attr메소드는 속성을 변경하는 구문</h1>-->
+	<div class="btn">
+		<a href="#">원본이미지</a>
+		<a href="#">변경이미지</a>
+		<a href="#">변경이미지2</a>
+	<figure>
+		<img src="img/banner01.png" alt="배너1">
+	</figure>		
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('a:eq(0)').on('click', function(){
+				var img = $('img').attr('src');
+				alert(img);
+			});
+			$('a:eq(1)').on('click', function(){
+				$('img').attr({
+					'src':'img/banner02.png',
+					'alt':'배너2'
+				})
+			});
+			$('a:eq(2)').on('click', function(){
+				$('img').attr({
+					'src':'img/banner03.png',
+					'alt':'배너3'
+			})
+		})
+	});
+	</script>
+</body>
+
+</html>
