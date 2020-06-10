@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>레이아웃</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&Abril+Fatface&Comfortaa&display=swap" rel="stylesheet">
+
+</head>
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		color: #fff;
+	}
+	
+	html {
+		font-family: 'Noto Sans KR', sans-serif;
+	}
+	
+	header {
+		position: relative;
+		width: 100%;
+		height: 100px;
+		background-color: #3430A7;
+	}
+	
+	header .logo > strong {
+		position: absolute;
+		top: 20px;
+		font-size: 2.375rem;
+		left: 50px;
+		font-family: 'Comfortaa';
+		font-weight: 400
+	}
+	
+	header nav {
+		position: absolute;
+		right: 50px;
+		height: 100px;
+		line-height: 100px;
+	}
+	
+	header nav ul {
+		list-style: none;
+		float: right
+	}
+	
+	header nav ul li {
+		list-style: none;
+		float: left;
+		margin-left: 20px;
+		font-size: 2rem
+	}
+	
+	header nav ul li:first-child {
+		margin-left: 0;
+	}
+	
+	article {
+		margin-top: 20px;
+		width: 100%;
+		height: 600px;
+		background-color: darkgray;
+	}
+	article .text { margin-left: 50px; padding-top: 50px}
+	article .text > p {font-weight: 100}	
+	footer {clear: both;width: 100%; height: 100px; background-color: indianred; margin-top: 20px;}
+	footer .text {line-height: 100px;margin-left: 50px;}
+	footer a {margin-right: 10px;}
+</style>
+
+<body>
+
+	<header>
+		<div class="logo">
+			<strong>LOGO</strong>
+		</div>
+		<nav>
+			<ul>
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<div class="text">
+			<h1>회사소개</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, molestias. Officiis, praesentium nisi porro doloremque tempora quod, corporis odio officia nam quasi labore, voluptate perspiciatis. Accusamus neque, libero error doloremque!</p>
+		</div>
+	</article>
+	<footer>
+		<div class="text">
+			<a href="#">개인정보 취급방침</a>
+			<a href="#">이메일 주소 무단 수집거부</a>
+			<a href="#">회사 소개</a>
+		</div>
+	</footer>
+</body>
+
+</html>

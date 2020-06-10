@@ -344,6 +344,9 @@ html {font: 16px 'Noto Serif KR', sans-serif; color: #585858;
 	  background: url("../img/02.Campaign-2.jpg") no-repeat center / cover;
 }
 
+/*mag common*/
+#diormag h1 {font: var(--main-accent-font); font-style: italic; font-weight: 500; color: var(--accent-color); }
+
 /*diormag*/
 #diormag {
 	position: relative;
@@ -359,9 +362,63 @@ html {font: 16px 'Noto Serif KR', sans-serif; color: #585858;
 	top: 50%; transform: translateY(-50%);
 	color: var(--text-bright-color);
 }
-
 #diormag > div > h1 {
 	font-size: 3rem;
+}
+/*mag-list*/
+#mag-list h1 {font: var(--main-accent-font); font-style: italic; font-weight: 500; color: #000; background-color: }
+
+
+#mag-list {
+	clear: both;
+	position: relative;
+	width: 100%;
+	padding-top: 100%;
+}
+#mag-list .side {
+	position: absolute;
+	top: 0;
+	left: 3%;
+	transform: rotate(90deg);
+  transform-origin: left top;
+	margin-left: 5%;
+}
+#mag-list .side h1:after {
+	content: '';
+	display: block;
+	width: 2000%;
+	height: 1px;
+	background-color: #000;
+	margin-left: 110%;
+	margin-top: -13%;
+}
+#mag-list .mag-first {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin-left: 10%;
+}
+#mag-list .mag-first .pic01 {
+	display: block;
+	width: 55%;
+	height: 80%;
+	z-index: 10;
+	background: url(../img/04.mag-list.png) no-repeat center right / cover;
+}
+#mag-list .mag-first .text {
+	position: absolute;
+	width: 25%;
+	top: 10%;
+	left: 45%;
+}
+#mag-list .mag-first .text h1 {
+	margin-bottom: 1.25em;
+	font-size: 3rem;
+	mix-blend-mode: overlay;
+}
+#mag-list .mag-first .text .text-d {
+	margin-left: 40%;
 }
 
 

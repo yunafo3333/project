@@ -8,8 +8,8 @@
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
-	<style>
-/*
+<style>
+	/*
 		*{margin: 0; padding: 0;}
 		body {background-color: #adadad }
 		.container  {width: 1200px; margin: 20px auto;}
@@ -19,7 +19,7 @@
 		.main {width: 800px; float: right;}
 		.main img {position: absolute; border: 3px solid red;}
 */
-/*
+	/*
 		a {text-decoration: none; color: inherit;}
 		body {margin: 50px auto; text-align: center;}
 		h1 {margin-bottom: 20px}
@@ -36,17 +36,62 @@
 		}
 		img {width: 500px; height: auto;}
 */
-		
-		
-	</style>
+	/*	체크박스지정*/
+	/*
+	.wrap {
+		width: 700px;
+		margin: 50px auto;
+	}
+	
+	form {
+		margin: 30px 0;
+		line-height: 30px
+	}
+*/
+</style>
+
 <body>
 
+	<h1>if 조건문으로 성인인증 체크</h1>
+	<input type="text">
+	<button>성인인증</button>
+	<p>당신의 성별을 입력하세요</p>
 
 
 
 
-<!--작은이미지 클릭시 오른쪽 큰 이미지가 바뀌는 메소드 작업-->
-<!--
+
+
+
+
+	<!--체크박스 지정-->
+	<!--
+	<div class="wrap">
+		<h1>체크박스 지정</h1>
+		<form>
+			<input type="checkbox"> iPhone
+			<br>
+			<input type="checkbox"> Android
+			<br>
+			<input type="checkbox"> Window Phone
+			<br>
+			<input type="button" value="전체선택">
+			<input type="button" value="전체해체">
+		</form>
+	</div>
+-->
+
+
+
+
+
+
+
+
+
+
+	<!--작은이미지 클릭시 오른쪽 큰 이미지가 바뀌는 메소드 작업-->
+	<!--
 	<div class="container">
 		<div class="navi">
 			<ul>
@@ -67,41 +112,78 @@
 -->
 
 
-
-<!--	<h1>attr메소드는 속성을 변경하는 구문</h1>-->
 	<script>
-//		$(document).ready(function(){
-//			$('a:eq(0)').on('click', function(){
-//				var img = $('img').attr('src');
-//				alert(img);
-//			});
-//			$('a:eq(1)').on('click', function(){
-//				$('img').attr({
-//					'src':'img/banner02.png',
-//					'alt':'배너2'
-//				})
-//			});
-//			$('a:eq(2)').on('click', function(){
-//				$('img').attr({
-//					'src':'img/banner03.png',
-//					'alt':'배너3'
-//			})
-//		})
-//	});
-		
-		
-//<!--작은이미지 클릭시 오른쪽 큰 이미지가 바뀌는 메소드 작업-->		
-//			$(function(){
-//			$('.navi a').on('click', function(){
-////				before은 선택된요소 앞에 삽입되는
-//				$('.main img').before("<img src='" + $(this).attr('href') + "'alt=''>");
-//				$('.main img:last').fadeOut('fast', function(){
-//					 $(this).remove();
-//				});
-//				return false;
-//			});
-//	});
-		
+		$('button').on('click', function () {
+			var num = $('input').val();
+
+			if (num = '') {
+				alert('나이를 숫자로 입력해주세요');
+			} else if (num >= 19) {
+				alert('성인인증 됐습니다.')
+			} else if (num < 19) {
+				alert('청소년은 이용할 수 없습니다.')
+			} else {
+				alert('숫자만 입력해주세요')
+			}
+		});
+
+
+
+		//		체크박스지정
+		//		$(function () {
+		//			$(':button:eq(0)').on('click', function () {
+		//				$(':checkbox').each(function () {
+		//					$(this).attr('checked', true);
+		//				});
+		//			});
+		//			$(':button:eq(1)').on('click', function () {
+		//				$(':checkbox').each(function () {
+		//					$(this).attr('checked', false);
+		//				});
+		//			});
+		//		})
+
+
+		//		$(document).ready(function () {
+		//			$("#div").on('click',function () {
+		//				val text = &(this).text();
+		//				$("#chgcolor").css("background-color", "red");
+		//			});
+		//		})
+
+
+		//<!--	<h1>attr메소드는 속성을 변경하는 구문</h1>-->		
+		//		$(document).ready(function(){
+		//			$('a:eq(0)').on('click', function(){
+		//				var img = $('img').attr('src');
+		//				alert(img);
+		//			});
+		//			$('a:eq(1)').on('click', function(){
+		//				$('img').attr({
+		//					'src':'img/banner02.png',
+		//					'alt':'배너2'
+		//				})
+		//			});
+		//			$('a:eq(2)').on('click', function(){
+		//				$('img').attr({
+		//					'src':'img/banner03.png',
+		//					'alt':'배너3'
+		//			})
+		//		})
+		//	});
+
+
+		//<!--작은이미지 클릭시 오른쪽 큰 이미지가 바뀌는 메소드 작업-->		
+		//			$(function(){
+		//			$('.navi a').on('click', function(){
+		////				before은 선택된요소 앞에 삽입되는
+		//				$('.main img').before("<img src='" + $(this).attr('href') + "'alt=''>");
+		//				$('.main img:last').fadeOut('fast', function(){
+		//					 $(this).remove();
+		//				});
+		//				return false;
+		//			});
+		//	});
 	</script>
 </body>
 
