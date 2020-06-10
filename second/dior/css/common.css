@@ -1,0 +1,32 @@
+@charset "utf-8";
+font-family: 'Gothic A1', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Noto Serif KR', serif;
+
+
+body {font: 15px 'Noto Serif KR', sans-serif; color: #585858; letter-spacing: 1px; }
+img {vertical-align: top;}
+
+/*footer*/
+footer {background-color: #fafafa; width: 100%; overflow: hidden; padding: 5% 0;}
+footer .f-container {margin: 0 auto; width: 95%; height: 50%; }
+footer .f-container a {display: block;}
+footer .f-container .fnb .f-logo img { display: block; width: 30px; height: 30px; margin-bottom: 20px; }
+footer .f-container .column {float: left; display: block; width: 20%; height: auto; }
+footer .f-container .column h1 {position: relative; color: #000; font-size: 12px; font-weight: 700; margin-bottom: 30px; }
+footer .f-container .one h1 {margin-bottom: 18px;}
+footer .f-container .column h1:after { 
+  position: absolute; 
+  bottom: -5px; left: 1px;
+  display: block;
+  width: 15px;
+  height: 2px;
+  background: #000;
+  content: '';}
+footer .f-container .column li {font-size: 14px; color: #737373; margin-bottom: 10px; }
+footer .f-container .column li a {display: inline-block;}
+footer .f-container .one img {display: block; width: 30px}
+footer .f-container .five {width: 20%;}
+footer .f-container .five span i {display: inline-block; width: 32px; height: 32px; text-align: center; line-height: 30px; border: 2px solid #000; color: #000; border-radius: 20px; box-sizing: border-box; margin-right: 10px; margin-bottom: 15px;}
+
+
