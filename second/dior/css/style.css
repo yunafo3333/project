@@ -360,6 +360,9 @@ html {font: 16px 'Noto Serif KR', sans-serif; color: #585858;
 	color: var(--text-bright-color);
 }
 
+#diormag > div > h1 {
+	font-size: 3rem;
+}
 
 
 
