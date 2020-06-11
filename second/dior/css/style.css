@@ -36,7 +36,7 @@ html {
 }
 
 #wrap .inner {
-  width: 80%;
+  width: 73.3333%;
   margin: 0 auto;
   position: relative;
 }
@@ -49,6 +49,7 @@ html {
   overflow: hidden;
   width: 100%;
   height: 100vh;
+   color: var(--text-bright-color);
 }
 
 #main-visual .banner-wrap {
@@ -75,49 +76,67 @@ html {
   z-index: -1;
 }
 
-/*main-header*/
-#gnb {
+/* side */
+#main-visual .side-nav {
+  position: relative;
+  float: right;
+  margin-right: 3%;
+  margin-top: 4%;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 1%;
+  height: 80%;
+}
+#main-visual .side-nav .search {
   position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 20%;
+}
+#main-visual .side-nav .number {
+  position: absolute;
+  bottom: 20%;
+}
+#main-visual .side-nav .number em {
+  display: block;
+  line-height: 1.25rem;
+  font-size: 1rem;
+}
+
+
+/*main-header*/
+
+#nav-all {
+  position: relative;
+  font: var(--main-accent-font);
+}
+
+.gnb-list {
+  position: absolute;
+  top: 55px;
+  left: 51%;
   width: 100%;
+  height: 50px;
+  transform: translateX(-50%);
   font-size: 1.625rem;
   z-index: 10;
 }
-
-#gnb .logo {
-  width: 168px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-40%, -50%)
+.gnb-list .logo {
+  position: relative;
+  top: -10px;
+  display: inline-block;
 }
+.gnb-list {width: 1024px; height: 50px; }
 
-#gnb .left-gnb {
-  float: left;
-}
-
-#gnb .right-gnb {
-  float: right;
-}
-
-#gnb ul li {
-  display: block;
+.gnb-list li {
   float: left;
   font-weight: 400;
-  margin-left: 60px;
+  margin-left: 50px;
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s;
 }
-
-#gnb ul li:first-child {
+.gnb-list li:first-child {
   margin-left: 0;
 }
-
-#gnb ul li:hover {
-  color: var(--text-bright-color);
-}
+.
 
 /*#main-visual*/
 #main-visual .bg-all {
@@ -181,30 +200,29 @@ html {
 }
 
 #brand-intro .info .text h1 {
-  width: 600px;
-  margin-top: -130px;
+  width: 700px;
+  margin-top: -180px;
   margin-left: 50%;
   color: var(--text-dark-color);
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 6rem;
+  line-height: 6rem;
 }
 
 .inner .explain .brand-text {
   overflow: hidden;
   margin-top: 50px;
+  width: 100%;
 }
 
 .inner .explain .brand-text>dt {
-  width: 15%;
+  width: 20%;
   float: left;
-  margin-right: 1%;
 }
 
 .inner .explain .brand-text>dd {
-  width: 84%;
+  width: 75%;
   float: right;
   line-height: 1.75rem;
-  word-break: break-all;
 }
 
 .inner .explain .brand-text>dd>h2 {
@@ -219,13 +237,14 @@ html {
   position: relative;
   margin-top: 15px;
   margin-bottom: 15px;
+  background-color: ;
 }
 
 .inner .explain .B-title:before {
   position: absolute;
   content: '';
   display: block;
-  width: 170px;
+  width: 70%;
   height: 1px;
   margin-top: -10px;
   background-color: #d4d4d4;
@@ -482,12 +501,23 @@ html {
   position: relative;
   width: 100%;
   padding-top: 100%;
-  
+  /* background-color: silver; */
+  overflow: hidden;
+}
+#mag-list:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 8%;
+  height: 15%;
+  top: 0;
+  right: 0;
+  background-color: red;
 }
 
 #mag-list .side {
   position: absolute;
-  top: 0;
+  top: 8%;
   left: 3%;
   transform: rotate(90deg);
   transform-origin: left top;
@@ -522,19 +552,20 @@ html {
   display: block;
   width: 50%;
   height: 70%;
-  top: 1%;
+  margin-top: 10%;
   background: url(../img/04.mag-list.png) no-repeat center right / cover;
 }
-#mag-list .mag-first .mag:before {
+
+#mag-list .mag:before {
   position: absolute;
   content: '';
   display: block;
-  background-color: red;
   width: 50%;
   height: 30%;
   z-index: -1;
   top: -20px;
   left: -20px;
+  background-color: red;
 }
 
 #mag-list .mag-first .text {
@@ -551,4 +582,14 @@ html {
 
 #mag-list .mag-first .text .text-d {
   margin-left: 25%;
+}
+#mag-list .mag-first .pic02 {
+  position: absolute;
+  display: block;
+  width: 30%;
+  height: 45%;
+  right: 0;
+  bottom: 0;
+  margin-top: 10%;
+  background: url(../img/04.mag-list2.png) no-repeat center right / cover;
 }
