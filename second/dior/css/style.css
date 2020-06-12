@@ -1,6 +1,10 @@
 @charset "utf-8";
 
 /*common*/
+::selection {
+   background: #f00;
+   color: #fff;
+}
 
 html {
 	font: 16px 'Noto Serif KR', sans-serif;
