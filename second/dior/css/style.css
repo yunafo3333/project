@@ -5,19 +5,20 @@
   background: #ad8141;
   color: #fff;
 }
+:root {
+  --main-accent-font: 1rem 'baskerville-urw', 'Noto Serif KR';
+  --main-kr-font: 100 1rem/1rem 'Noto Serif KR', serif;
+}
 
 html {
   font: 16px 'Noto Serif KR', sans-serif;
   color: #585858;
 }
 
-:root {
-  --main-accent-font: 1rem 'baskerville-urw', 'Noto Serif KR';
-  --main-kr-font: 100 1rem/1rem 'Noto Serif KR', serif;
+#wrap {
+  width: 100%;
+  min-width: 1024px;
 }
-
-
-/*  color: #000; 임시*/
 
 #gnb,
 #main-visual,
@@ -153,6 +154,7 @@ html {
   margin-left: 50px;
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s;
+  font-size: 1.25rem
 }
 
 .gnb-list li:first-child {
@@ -238,11 +240,11 @@ html {
 }
 
 #brand-intro .info .text h1 {
-  width: 700px;
-  margin-top: -180px;
-  margin-left: 50%;
+  width: 40%;
+  margin-top: -2.5em;
+  margin-left: 20%;
   color: #000;
-  font-size: 6rem;
+  font-size: 3.75rem;
   line-height: 1em;
   animation-duration: 3s;
   animation-name: slidein02;
@@ -627,8 +629,9 @@ html {
 }
 
 #mag-list .text h1 {
-  margin-bottom: 1.25em;
+  margin-bottom: 0.625em;
   font-size: 3rem;
+  line-height: 1em;
 }
 
 #mag-list .text .text-d {
@@ -751,6 +754,9 @@ html {
   margin-left: 5%
 }
 
+#mag-part01 .mag-two .text h1 {
+  margin-bottom: 1%;
+}
 
 
 
@@ -1034,3 +1040,8 @@ button:hover {
   height: 30px;
   padding-left: 7px;
 }
+
+/* @media screen and (min-width:1440px) {
+  html {font-size: 20px}
+} */
+
