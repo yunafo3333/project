@@ -657,15 +657,7 @@ html {
   font-size: 2rem;
 }
 
-#mag-list .side h1:after {
-  content: '';
-  display: block;
-  width: 500%;
-  height: 1px;
-  background-color: #000;
-  margin-left: 110%;
-  margin-top: -13%;
-}
+
 
 #mag-part01 {
   position: relative;
