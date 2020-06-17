@@ -49,13 +49,11 @@ body {
     width: 160px;
     padding: 10px;
     overflow: hidden;
-    opacity: 0;
-    transition: all 0.4s
+	display: none;
 }
 #main-header .inner-header .gnb .submenu li {width: 100%}
 #main-header .inner-header .gnb li:hover .submenu {
     display: block;
-    opacity: 1
 }
 #main-header .inner-header .gnb .submenu li a {
   padding-left: 10px;
