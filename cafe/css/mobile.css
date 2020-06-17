@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+html {font-size: 10px;}
+body {font-size: 1.4rem}
+
+#warp {width: 100%; }
+
+/*common*/
+section article  {width: 100%; padding: 30px 0;}
+section article h2 {font-size: 2.5rem}
+section article h3 {font-size: 2rem}
+
+/*header*/
+header {height: 80px;}
+header .inner {overflow: visible; 
+  position: relative; padding: 0 15px;}
+header .inner .logo {
+  top: 38px;
+  width: 50px;
+  height: 50px;
+}
+header .inner .tnb ul {
+  display: none;
+}
+#main-visual .main-gnb {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: calc(100vh - 65px);
+  background-color: rgba(0, 0, 0, 0.7);
+  box-sizing: border-box;
+  z-index: 10;
+  color: #fff;
+  font-size: 2rem;
+}
+#main-visual .main-gnb ul {width: 100%}
+#main-visual .main-gnb ul li {float: none; width: 100%; }
+#main-visual .main-gnb ul  li a {display: block; line-height: 45px; width: 100%; height: 100px; line-height: 100px;margin: 0; border-bottom: 1px solid #fff;}
+#main-visual .menu {
+  top: 30px;
+  position: fixed;
+  display: block;
+  width: 25px;
+  height: 25px;
+  right: 30px;
+  z-index: 100;
+}
+#main-visual .menu span {
+  height: 3px;
+  background: #222;
+  position: absolute;
+  transition: all 0.3s;
+}
+#main-visual .menu .one {width: 100%}
+#main-visual .menu .two {width: 50%; top: 8px;}
+#main-visual .menu .three {width: 65%; top: 16px;}
+#main-visual .menu.on .one {transform: rotate(45deg) translate(30%); width: 150%;}
+#main-visual .menu.on .two {display: none;}
+#main-visual .menu.on .three {transform: rotate(-45deg) translate(30%); width: 150%; }
+
+/*mainvisual*/
+#main-visual {height: calc(100vh - 65px);}
+#main-visual .banner-wrap .banner {
+  height: calc(100vh - 65px);
+  background-position: center bottom;
+  background-size: cover
+}
+#main-visual .banner .contents {width: 100%}
+#main-visual .banner .contents > a {display: none}
+#main-visual .text span {font-size: 2rem;}
+
+/*regular*/
+#regular .reg-list {margin-top: 40px;}
+#regular .reg-list li {width: 100%; margin-bottom: 20px;}
+#regular .reg-list li img {width: 130px;}
+#regular .reg-list li strong {margin-bottom: 0;}
+#regular .btn-area {margin-top: 30px;}
+#regular .btn-area > a {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*footer*/
+footer .f-container {width: 85%; padding: 20px 0; font-size: 1.3rem}
+footer .fnb {margin-bottom: 15px}
+footer .fnb li {float: left; margin-right: 10px}
+
+
+
+
+
+
+
