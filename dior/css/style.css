@@ -15,6 +15,9 @@ html {
   color: #585858;
 }
 
+#skip-nav {position: fixed; left: 0; top: -41px; width: 100%; line-height: 40px; text-align: center; font-size: 16px; background: rgba(0, 0, 0, 0.6); color: #ffffff; border-bottom: 1px solid #ffffff; z-index: 10000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+
 #wrap {
   width: 100%;
   min-width: 1024px;
@@ -43,8 +46,6 @@ html {
   position: relative;
 }
 
-
-/*  color: #000; 임시*/
 
 
 /*header*/
@@ -129,7 +130,7 @@ html {
 .gnb-list {
   position: absolute;
   top: 55px;
-  left: 51%;
+  left: 54%;
   width: 100%;
   height: 50px;
   transform: translateX(-50%);
@@ -171,9 +172,9 @@ html {
 
 #main-visual .bg-all .text {
   position: absolute;
-  width: 100%;
+  width: 95%;
   overflow: hidden;
-  top: 50%;
+  top: 45%;
   text-align: center;
   opacity: 0.7;
 }
@@ -211,10 +212,6 @@ html {
 
 
 /*brand-intro*/
-
-#brand-intro {
-  width: 100%;
-}
 
 #brand-intro .brand {
   margin: 100px 0;
@@ -321,17 +318,17 @@ html {
 
 #gender-entrance {
   position: relative;
+  height: 700px;
   margin: 150px 0;
   color: #fff;
   font-size: 1.5rem;
-  padding-bottom: 50%;
 }
 
 #gender-entrance span {
   position: absolute;
   display: block;
   width: 80%;
-  height: 85%;
+  height: 500px;
   /*  height: calc(100vh - 200px);*/
   background-color: #8a775a;
   z-index: -1;
@@ -394,7 +391,7 @@ html {
 #gender-entrance .women h3:before {
   position: absolute;
   content: '';
-  width: 650%;
+  width: 770px;
   height: 1px;
   background-color: #fff;
   z-index: 10;
@@ -411,7 +408,7 @@ html {
 #gender-entrance .men h3:before {
   position: absolute;
   content: '';
-  width: 2000%;
+  width: 500px;
   height: 1px;
   background-color: #fff;
   z-index: 10;
@@ -441,13 +438,6 @@ html {
   margin-bottom: 100px;
 }
 
-#best-seller .best-list .slide-wrap {
-  width: 100%;
-}
-
-/*
-
-*/
 #best-seller .best-list ul {
   width: 300%;
 }
@@ -456,7 +446,7 @@ html {
   margin-top: 30px;
   width: 8%;
   float: left;
-  padding-bottom: 8%;
+  height: 350px;
   margin-bottom: 2%;
   margin-right: 2%;
   background: url(../img/item/best01.jpg) no-repeat center center / cover;
@@ -521,9 +511,10 @@ html {
   position: relative;
   float: left;
   width: 60%;
+  height: 400px;
   margin-right: 5%;
   margin-bottom: 5%;
-  padding-top: 40%;
+  
 }
 
 #campaign .c-list {
@@ -580,7 +571,7 @@ html {
 .diormag {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../img/03.mag.png)no-repeat center center / cover;
   margin-bottom: 100px;
 }
@@ -597,10 +588,6 @@ html {
 .diormag > div > h1 {
   font-size: 3rem;
 }
-
-
-/*mag-list*/
-
 
 /*mag-list common*/
 
@@ -662,7 +649,7 @@ html {
 #mag-part01 {
   position: relative;
   width: 100%;
-  padding-top: 120%;
+  height: 1710px;
   overflow: hidden;
 }
 
@@ -701,7 +688,7 @@ html {
 
 #mag-part01 .mag-first .pic01 {
   width: 45%;
-  height: 52%;
+  height: 55%;
   margin-top: 10%;
   background: url(../img/04.mag-list.png) no-repeat center right / cover;
 }
@@ -757,7 +744,7 @@ html {
 #mag-part02 {
   position: relative;
   width: 100%;
-  padding-top: 100%;
+  height: 1425px;
 }
 
 #mag-part02:before {
@@ -827,7 +814,7 @@ html {
 #mag-part03 {
   position: relative;
   width: 100%;
-  padding-top: 100%;
+  padding-top: 1425px;
 }
 
 #mag-part03 .mag-four .pic06 {
@@ -889,7 +876,6 @@ html {
   position: relative;
   width: 40%;
   margin: 0 auto;
-
 }
 
 .diormag.letter .all-text h1,
