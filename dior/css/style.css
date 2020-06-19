@@ -15,6 +15,9 @@ html {
   color: #585858;
 }
 
+#skip-nav {position: fixed; left: 0; top: -41px; width: 100%; line-height: 40px; text-align: center; font-size: 16px; background: rgba(0, 0, 0, 0.6); color: #ffffff; border-bottom: 1px solid #ffffff; z-index: 10000; transition: top 0.3s;}
+#skip-nav:focus {top: 0;}
+
 #wrap {
   width: 100%;
   min-width: 1024px;
