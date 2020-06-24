@@ -1,10 +1,7 @@
 $(function(){
-  console.log('start');
   
   var numSlide = $('ul.slide li').length;
   var slideNow = 0;
-  var slidePrev = 0;
-  var slideNext = 0;
   var effect = 'none';
   
   showSlide(1);
@@ -13,12 +10,7 @@ $(function(){
       var index = $('ul.indicator li').index($(this).parent());
       showSlide(index + 1);
   });
-  $('p.control a.prev').on('click', function() {
-      showSlide(slidePrev);
-  });
-  $('p.control a.next').on('click', function() {
-      showSlide(slideNext);
-  });
+
   
   function showSlide(n) {
       if (effect === 'fade') {

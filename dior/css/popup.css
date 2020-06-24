@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+
+
+
+    #layer-mask {position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1000;}
+    div.layer-popup {position: fixed; opacity: 0.8; width: 80%; height: 400px; max-width: 90%; max-height: 90%; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #ffffff; box-sizing: border-box; padding: 40px 0 10px 0; z-index: 1001; box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4); display: none;}
+    div.layer-popup div.header {position: absolute; left: 0; top: 0; width: 100%; line-height: 40px; background: #ad8141; color: #ffffff; box-sizing: border-box; padding: 0 20px;}
+    div.layer-popup div.header a.close {position: absolute; right: 30px; top: 0; font-size: 1.5rem;}
+    div.layer-popup div.body {height: 100%; box-sizing: border-box; overflow: auto; padding: 20px;}
+    div.layer-popup div.content ul {float: left; text-align: center; width: 25%;}
+    div.layer-popup div.content ul h2 {font-size: 1.375rem; margin-bottom: 5px;}
+
+
