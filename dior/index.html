@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/nri7uir.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+
   <!--CDN 링크 -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -20,7 +21,10 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
-
+  <script src="js/slide_script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/jquery.easings.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/scrolloverflow.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.min.js'></script>
 </head>
 
 <body class="main" id="body">
@@ -39,81 +43,68 @@
           <li>·</li>
           <li><a href="#">ABOUT</a></li>
         </ul>
+        <div class="side-nav">
+          <div class="bars"><a href="#"><i class="fas fa-bars"></i></i></a></div>
+          <div class="search"><a href="#"><i class="fas fa-search"></i></a></div>
+          <ul class="indicator">
+            <li class="on"><a href="#">01</a></li>
+            <li><a href="#">02</a></li>
+            <li><a href="#">03</a></li>
+            <li><a href="#">04</a></li>
+          </ul>
+          <div class="lang">
+            <a href="#">KO</a> / <a href="#">EN</a>
+          </div>
+        </div>
       </section>
     </header>
     <!--//header-->
     <section id="main-visual">
       <article class="banner-wrap">
         <div class="bg-all">
-          <video autoplay loop muted poster="video/vd_bg.png" class="bg">
-            <source src="video/back_vd.mp4" type="video/mp4">
-          </video>
+          <ul class="slide">
+            <li>
+              <a href="#">
+                <video autoplay loop muted poster="video/vd_bg.png" class="bg">
+                  <source src="video/back_vd.mp4" type="video/mp4">
+                </video>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <iframe
+                  src="https://player.vimeo.com/video/81816708?background=1&amp;autoplay=1&amp;loop=1&amp;byline=0&amp;title=0"
+                  class="bg" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <iframe
+                  src="https://player.vimeo.com/video/167949991?background=1&amp;autoplay=1&amp;loop=1&amp;byline=0&amp;title=0"
+                  class="bg" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <iframe
+                  src="https://player.vimeo.com/video/181650974?background=1&amp;autoplay=1&amp;loop=1&amp;byline=0&amp;title=0"
+                  class="bg" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+              </a>
+            </li>
+          </ul>
+
           <div class="text">
             <div class="text-box">
               <h2>오직 단 하나, 디올</h2>
               <h1>THE ONLY ONE, DIOR</h1>
             </div>
           </div>
-          <!-- side header 제작중 -->
-          
-          <!-- <nav class="header-nav">
-            <button id="opener" class="hamburger hamburger--vortex-r" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>
-            <div id="popup" aria-expanded="false">
-              <ul class="side-list">
-                <li><a href="#">ABOUT</a>
-                  <ul>
-                    <li><a href="#">디올의 역사</a></li>
-                    <li><a href="#">제작 과정</a></li>
-                    <li><a href="#">SINCE 1947</a></li>
-                    <li><a href="#">전시</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">PRODUCT</a>
-                  <ul>
-                    <li><a href="#">남성/여성패션</a></li>
-                    <li><a href="#">화장품</a></li>
-                    <li><a href="#">향수</a></li>
-                    <li><a href="#">기타/선물</a></li>
-                  </ul></li>
-                <li><a href="#">BOARD</a>
-                  <ul>
-                    <li><a href="#">문의하기</a></li>
-                    <li><a href="#">배송 및 반품</a></li>
-                    <li><a href="#">채용정보</a></li>
-                    <li><a href="#">개인정보 처리방침</a></li>
-                  </ul></li>
-                <li><a href="#">NEWS</a>
-                  <ul>
-                    <li><a href="#">디올 매거진</a></li>
-                    <li><a href="#">전시회</a></li>
-                    <li><a href="#">카페디올</a></li>
-                  </ul></li>
-              </ul>
-            </div>
-          </nav> -->
-          <div class="side-nav">
-            <div class="bars"><a href="#"><i class="fas fa-bars"></i></i></a></div>
-            <div class="search"><a href="#"><i class="fas fa-search"></i></a></div>
-            <div class="number">
-              <em><a href="#">01</a></em>
-              <em>·</em>
-              <em><a href="#">02</a></em>
-              <em>·</em>
-              <em><a href="#">03</a></em>
-              <em>·</em>
-              <em><a href="#">04</a></em>
-            </div>
-            <div class="lang">
-              <a href="#">KO</a> / <a href="#">EN</a>
-            </div>
-          </div>
+
+
           <div class="scroll-bar">
             SCROLL
           </div>
+
         </div>
       </article>
     </section>
@@ -215,7 +206,7 @@
               </li>
 
               <li class="swiper-slide">
-               <a href="#"></a>
+                <a href="#"></a>
                 <!--
                                 <p>신제품</p>
                                 <h1>Lady D-Lite</h1>
@@ -225,7 +216,7 @@
               </li>
 
               <li class="swiper-slide">
-               <a href="#"></a>
+                <a href="#"></a>
                 <!--
                                 <p>신제품</p>
                                 <h1>Lady D-Lite</h1>
@@ -243,7 +234,7 @@
 -->
               </li>
               <li class="swiper-slide">
-               <a href="#"></a>
+                <a href="#"></a>
                 <!--
                                 <p>신제품</p>
                                 <h1>Lady D-Lite</h1>
@@ -280,7 +271,7 @@
                 </div>
                 <em>03/05</em>
                 <a href="#"><i class="fas fa-chevron-left"></i></a>
-                <a href="#"><i class="fas fa-chevron-right"></i></a> 
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
               </div>
 
             </li>
@@ -298,7 +289,7 @@
                 <em>03/05</em>
                 <a href="#"><i class="fas fa-chevron-left"></i></a>
                 <a href="#"><i class="fas fa-chevron-right"></i>
-                </a> 
+                </a>
               </div>
             </li>
             <li class="entr campaign03">
@@ -312,7 +303,8 @@
                 <div class="btn-more">
                   <a href="#">VIEW ALL +</a>
                 </div>
-                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i> </p>
+                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+                </p>
               </div>
             </li>
             <li class="entr campaign03">
@@ -326,7 +318,8 @@
                 <div class="btn-more">
                   <a href="#">VIEW ALL +</a>
                 </div>
-                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i> </p>
+                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+                </p>
               </div>
             </li>
             <li class="entr campaign03">
@@ -340,7 +333,8 @@
                 <div class="btn-more">
                   <a href="#">VIEW ALL +</a>
                 </div>
-                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i> </p>
+                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+                </p>
               </div>
             </li>
           </ul>
@@ -538,4 +532,7 @@
       </article>
     </footer>
   </div>
-</body></html>
+
+</body>
+
+</html>

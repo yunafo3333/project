@@ -92,57 +92,26 @@ html {
 
 #main-visual .banner-wrap .bg-all {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
 }
 
 #main-visual .banner-wrap .bg-all .bg {
+  width: 100vw;
+  height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+  min-height: 100vh;
+  min-width: 200vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
   z-index: -1;
 }
 
 
-/* side */
 
-#main-visual .side-nav {
-  position: relative;
-  float: right;
-  margin-right: 3%;
-  margin-top: 4%;
-  font-size: 1.5rem;
-  text-align: center;
-  width: 2%;
-  height: 100%;
-}
 
-#main-visual .side-nav .search {
-  position: absolute;
-  top: 20%;
-}
-
-#main-visual .side-nav .number {
-  position: absolute;
-  bottom: 40%;
-}
-
-#main-visual .side-nav .number em {
-  display: block;
-  line-height: 1em;
-  font-size: 1rem;
-}
-
-#main-visual .side-nav .lang {
-  position: absolute;
-  bottom: 15%;
-  line-height: 1em;
-  font-size: 0.625rem;
-}
 
 
 
@@ -156,7 +125,7 @@ html {
   font: var(--main-accent-font);
 }
 
-.gnb-list {
+#nav-all .gnb-list {
   position: absolute;
   top: 55px;
   left: 51%;
@@ -167,18 +136,18 @@ html {
   z-index: 10;
 }
 
-.gnb-list .logo {
+#nav-all .gnb-list .logo {
   position: relative;
   top: -10px;
   display: inline-block;
 }
 
-.gnb-list {
+#nav-all .gnb-list {
   width: 900px;
   height: 50px;
 }
 
-.gnb-list li {
+#nav-all .gnb-list li {
   float: left;
   font-weight: 400;
   margin-left: 50px;
@@ -187,9 +156,14 @@ html {
   font-size: 1.25rem
 }
 
-.gnb-list li:first-child {
+#nav-all .gnb-list li:first-child {
   margin-left: 0;
 }
+
+
+
+
+
 
 
 /*#main-visual*/
@@ -237,6 +211,43 @@ html {
   width: 100px;
   height: 0.5px;
   margin-top: 20px;
+}
+
+
+/* side */
+
+#nav-all .side-nav {
+  position: absolute;
+  right: 0;
+  margin-right: 3%;
+  margin-top: 4%;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 2%;
+  height: 100vh;
+  z-index: 100;
+  color: #fff;
+}
+
+#nav-all .side-nav .search {
+  position: absolute;
+  top: 20%;
+}
+
+#nav-all .side-nav .indicator {
+  position: absolute;
+  bottom: 40%;
+}
+
+#nav-all .side-nav .indicator li {
+  font-size: 1.2rem;
+}
+
+#nav-all .side-nav .lang {
+  position: absolute;
+  bottom: 15%;
+  line-height: 1em;
+  font-size: 0.625rem;
 }
 
 
