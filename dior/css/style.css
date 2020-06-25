@@ -463,39 +463,12 @@ html {
 #best-seller {
   clear: both;
   position: relative;
-  margin-left: 130px;
+  width: 90%;
   margin-bottom: 100px;
   overflow: hidden;
+  margin-left: 10%;
 }
 
-#best-seller .best-list > p {
-  margin-bottom: 100px;
-}
-
-#best-seller .best-list .slide-wrap {
-  width: 100%;
-}
-
-/*
-*/
-#best-seller .best-list ul {
-  width: 300%;
-}
-
-#best-seller .best-list ul .swiper-slide a {
-  margin-top: 30px;
-  width: 8%;
-  float: left;
-  padding-bottom: 8%;
-  margin-bottom: 2%;
-  margin-right: 2%;
-  background: url(../img/item/best01.jpg) no-repeat center center / cover;
-  transition: all 0.3s
-}
-
-#best-seller .best-list ul .swiper-slide a:hover {
-  background: url(../img/item/wear01.jpg) no-repeat center center / cover;
-}
 
 #best-seller .more-btn {
   position: absolute;
@@ -503,20 +476,34 @@ html {
   top: 0;
 }
 
-#best-seller .best-scroll {
+
+#best-seller .swiper-container {
+  width: 100%;
+
+}
+#best-seller .swiper-container .swiper-wrapper {
+margin-bottom: 50px;
+}
+
+#best-seller .swiper-container .swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  overflow: hidden;
+  padding-top: 30%;
+}
+#best-seller .swiper-container .swiper-slide img {
   position: absolute;
-  bottom: 0;
-  font-style: italic;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180%;
 }
-
-#best-seller .best-scroll:after {
-  display: block;
-  content: '';
-  height: 3px;
-  width: 2000%;
-  background-color: #000;
-}
-
 
 /*campaign*/
 

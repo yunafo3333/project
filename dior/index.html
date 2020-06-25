@@ -10,21 +10,26 @@
   <title>dior</title>
   <meta name="description" content="디올 리디자인_포트폴리오" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.typekit.net/nri7uir.css">
+  <link href="https://use.typekit.net/nri7uir.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
   <!--CDN 링크 -->
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="css/style.css">
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/slide_script.js"></script>
+  <script src="js/sw_slide_script.js"></script>
   <script src="js/popup_script.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/jquery.easings.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/scrolloverflow.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.min.js'></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <!-- Link Swiper's CSS -->
 </head>
 
 <body class="main" id="body">
@@ -154,12 +159,12 @@
     <section id="brand-intro">
       <article class="brand info">
         <div class="main-img"></div>
-        <div class="text">
+        <div class="text intro">
           <h1>THE CRAFTS <br> OF DIOR <br>
             PIECE OF ART</h1>
         </div>
       </article>
-      <article class="inner">
+      <article class="inner intro">
         <div class="brand explain">
           <dl class="brand-text">
             <dt>
@@ -230,69 +235,53 @@
     </section>
     <section id="best-seller">
       <article>
-        <div class="best-list">
+        <div class="swiper-container">
           <div class="list-sell">
             <h3>Best Sellers</h3>
             <p>하우스의 상징적인 디자인부터 최신 컬렉션까지, 디올의 헤리티지 정신을 빛낸 작품들을 만나보세요.</p>
           </div>
-          <div class="slide-wrap">
-            <ul>
-              <li class="swiper-slide">
-                <a href="#"></a>
-                <!--
-                                <p>신제품</p>
-                                <h1>Lady D-Lite</h1>
-                                <h2>디올 레이디 백</h2>
-                                <span>KRW 5,500,000</span>
--->
-              </li>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#"><img src="img/item/best01.jpg" alt="아이템1"></a>
+            </div>
 
-              <li class="swiper-slide">
-                <a href="#"></a>
-                <!--
-                                <p>신제품</p>
-                                <h1>Lady D-Lite</h1>
-                                <h2>디올 레이디 백</h2>
-                                <span>KRW 5,500,000</span>
--->
-              </li>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/item/best02.jpg" alt="아이템1"></a>
+            </div>
 
-              <li class="swiper-slide">
-                <a href="#"></a>
-                <!--
-                                <p>신제품</p>
-                                <h1>Lady D-Lite</h1>
-                                <h2>디올 레이디 백</h2>
-                                <span>KRW 5,500,000</span>
--->
-              </li>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/item/best04.jpg" alt="아이템1"></a>
+            </div>
 
-              <li class="swiper-slide">
-                <!--
-                                <p>신제품</p>
-                                <h1>Lady D-Lite</h1>
-                                <h2>디올 레이디 백</h2>
-                                <span>KRW 5,500,000</span>
--->
-              </li>
-              <li class="swiper-slide">
-                <a href="#"></a>
-                <!--
-                                <p>신제품</p>
-                                <h1>Lady D-Lite</h1>
-                                <h2>디올 레이디 백</h2>
-                                <span>KRW 5,500,000</span>
--->
-              </li>
-            </ul>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/item/best05.jpg" alt="아이템1"></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"><img src="img/item/best06.jpg" alt="아이템1"></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"><img src="img/item/best07.jpg" alt="아이템1"></a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#"><img src="img/item/best08.jpg" alt="아이템1"></a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#"><img src="img/item/best09.jpg" alt="아이템1"></a>
+            </div>
+
+
           </div>
+          
+          <div class="swiper-scrollbar"></div>
+
         </div>
         <div class="more-btn">
           <p><a href="#">All Products +</a></p>
         </div>
-        <div class="best-scroll">
-          <h1>scroll to side</h1>
-        </div>
+        <div class="">Scroll to side</div>
       </article>
     </section>
     <section id="campaign">

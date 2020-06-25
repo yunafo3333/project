@@ -20,32 +20,35 @@ $(document).on('click', 'a[href="#"]', function(e) {
 });
 
 
-// slide
+// visible event
 
 
-$('ul.indicator li a').on('click', function() {
-    var index = $('ul.indicator li').index($(this).parent());
-    // var index = $(this).parent().index();
-    showSlide(index + 1);
+checkVisibility('div.intro');
+$(window).on('scroll resize', function() {
+    checkVisibility('div.intro');
 });
 
-$('p.control a.prev').on('click', function() {
-    var index = $('ul.indicator li').index($('ul.indicator li.on'));
-    // var index = $('ul.indicator li.on').index();
-    index = (index <= 0) ? 3 : (index - 1);
-    showSlide(index + 1);
-});
-
-$('p.control a.next').on('click', function() {
-    var index = $('ul.indicator li').index($('ul.indicator li.on'));
-    // var index = $('ul.indicator li.on').index();
-    index = (index >= 3) ? 0 : (index + 1);
-    showSlide(index + 1);
-});
-
-function showSlide(n) {
-    $('ul.slide li').css({'display': 'none'});
-    $('ul.slide li:eq(' + (n - 1) + ')').css({'display': 'block'});
-    $('ul.indicator li').removeClass('on');
-    $('ul.indicator li:eq(' + (n - 1) + ')').addClass('on');
+function checkVisibility(selector) {
+    var scrollTop = $(document).scrollTop();
+    $(selector).each(function() {
+        var $selector = $(this);
+        var minScroll = $selector.offset().top - $(window).height();
+        var maxScroll = $selector.offset().top + $selector.outerHeight();
+        if (scrollTop < minScroll) {
+            if ($selector.hasClass('down') !== true) {
+                $selector.removeClass('show up');
+                $selector.addClass('down');
+            }
+        } else if (scrollTop > maxScroll) {
+            if ($selector.hasClass('up') !== true) {
+                $selector.removeClass('down show');
+                $selector.addClass('up');
+            }
+        } else {
+            if ($selector.hasClass('show') !== true) {
+                $selector.removeClass('down up');
+                $selector.addClass('show');
+            }
+        }
+    });
 }
