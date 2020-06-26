@@ -11,7 +11,7 @@
 }
 
 html {
-  font: 16px 'Noto Serif KR', sans-serif;
+  font: 16px  'baskerville-urw', 'Noto Serif KR', sans-serif;
   color: #585858;
 }
 
@@ -252,43 +252,47 @@ html {
 }
 
 #brand-intro .info .main-img {
-  width: 0;
+  width: 70%;
   height: 500px;
   background: url("../img/00.Background-info.jpg") no-repeat center / cover;
-  animation-duration: 3s;
-  animation-name: slidein;
-  animation-fill-mode: forwards;
+
 }
 
-@keyframes slidein {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 70%;
-  }
-}
 
 #brand-intro .info .text h1 {
   width: 40%;
   margin-top: -2.5em;
-  margin-left: 20%;
+  margin-left: 50%;
   color: #000;
   font-size: 3.75rem;
   line-height: 1em;
-  animation-duration: 3s;
-  animation-name: slidein02;
-  animation-fill-mode: forwards;
 }
 
-@keyframes slidein02 {
+
+.has-scroll-reveal { opacity: 0; animation-play-state: paused; }
+
+.animated {
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
+@keyframes fadeInUp {
   from {
-    margin-left: 0%;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+    transform: translate3d(0, 2.5rem, 0);
   }
 
   to {
-    margin-left: 50%;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
@@ -299,16 +303,6 @@ html {
   animation-duration: 3s;
   animation-name: slidein03;
   animation-fill-mode: forwards;
-}
-
-@keyframes slidein03 {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
 }
 
 
@@ -512,10 +506,11 @@ margin-bottom: 50px;
   margin-bottom: 100px;
 }
 
-#campaign > article > h3 {
+#campaign > h3 {
   text-align: center;
   font-size: 1.25rem;
   margin-bottom: 50px;
+  font-size: 2.5rem;
 }
 
 #campaign .list {
@@ -523,16 +518,17 @@ margin-bottom: 50px;
   overflow: hidden;
 }
 
-#campaign .slide-list {
-  width: 500%;
-  overflow: hidden;
+
+#campaign .swiper-scrollbar {
+  position: absolute;
+  bottom: 100px;
+  width: 20%;
+  z-index: 100;
+  background-color: #ad8141;
+  left: 70%;
 }
 
-#campaign .entr {
-  width: 15%;
-  float: left;
-  margin-right: 2%;
-}
+
 
 #campaign .c-img {
   position: relative;
@@ -545,7 +541,7 @@ margin-bottom: 50px;
 
 #campaign .c-list {
   float: left;
-  width: 35%;
+  width: 20%;
 }
 
 #campaign .c-list strong {
@@ -555,7 +551,17 @@ margin-bottom: 50px;
   font-weight: 400;
 }
 
-#campaign .c-img.one {
+#campaign .c-list em {
+  position: absolute;
+  bottom: 90px;
+  font-size: 1.25rem;
+}
+
+#campaign .c-list h1 {
+
+}
+
+#campaign .c-img {
   background: url("../img/02.Campaign-1.jpg") no-repeat center / cover;
 }
 
@@ -577,9 +583,9 @@ margin-bottom: 50px;
   background-color: #8a775a;
 }
 
-#campaign .c-img.two {
+/* #campaign .c-img.two {
   background: url("../img/02.Campaign-2.jpg") no-repeat center / cover;
-}
+} */
 
 
 /*mag common*/

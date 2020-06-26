@@ -24,6 +24,7 @@
   <script src="js/script.js"></script>
   <script src="js/slide_script.js"></script>
   <script src="js/sw_slide_script.js"></script>
+  <script src="js/an_slide_script.js"></script>
   <script src="js/popup_script.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/jquery.easings.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/scrolloverflow.min.js'></script>
@@ -210,7 +211,7 @@
     </section>
     <section>
       <article>
-        <div id="gender-entrance">
+        <div id="gender-entrance" class="has-scroll-reveal animation fadeInUp">
           <div class="entr women">
             <span></span>
             <h3>WOMEN</h3>
@@ -234,7 +235,6 @@
       </article>
     </section>
     <section id="best-seller">
-      <article>
         <div class="swiper-container">
           <div class="list-sell">
             <h3>Best Sellers</h3>
@@ -281,15 +281,12 @@
         <div class="more-btn">
           <p><a href="#">All Products +</a></p>
         </div>
-        <div class="">Scroll to side</div>
-      </article>
+        <div>Scroll to side</div>
     </section>
-    <section id="campaign">
-      <article>
+    <section id="campaign" class="swiper-container">
         <h3><a href="#">Campaign</a></h3>
-        <div class="list">
-          <ul class="slide-list">
-            <li class="entr campaign01">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <a href="#" class="c-img one">
               </a>
               <div class="c-list">
@@ -300,13 +297,13 @@
                 <div class="btn-more">
                   <a href="#">VIEW ALL +</a>
                 </div>
-                <em>03/05</em>
-                <a href="#"><i class="fas fa-chevron-left"></i></a>
-                <a href="#"><i class="fas fa-chevron-right"></i></a>
+                <em>01/05</em>
+                <!-- <a href="#"><i class="fas fa-chevron-left"></i></a> -->
+                <!-- <a href="#"><i class="fas fa-chevron-right"></i></a> -->
               </div>
 
-            </li>
-            <li class="entr campaign02">
+            </div>
+            <div class="swiper-slide">
               <a href="#" class="c-img two">
               </a>
               <div class="c-list">
@@ -317,13 +314,12 @@
                 <div class="btn-more">
                   <a href="#">VIEW ALL +</a>
                 </div>
-                <em>03/05</em>
-                <a href="#"><i class="fas fa-chevron-left"></i></a>
-                <a href="#"><i class="fas fa-chevron-right"></i>
+                <em>02/05</em>
+
                 </a>
               </div>
-            </li>
-            <li class="entr campaign03">
+            </div>
+            <div class="swiper-slide">
               <a href="#" class="c-img three">
               </a>
               <div class="c-list">
@@ -334,11 +330,11 @@
                 <div class="btn-more">
                   <a href="#">VIEW ALL +</a>
                 </div>
-                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+                <p><em>03/05</em><span></span>
                 </p>
               </div>
-            </li>
-            <li class="entr campaign03">
+            </div>
+            <div class="swiper-slide">
               <a href="#" class="c-img four">
               </a>
               <div class="c-list">
@@ -349,11 +345,11 @@
                 <div class="btn-more">
                   <a href="#">VIEW ALL +</a>
                 </div>
-                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+                <p><em>04/05</em><span></span>
                 </p>
               </div>
-            </li>
-            <li class="entr campaign03">
+            </div>
+            <div class="swiper-slide">
               <a href="#" class="c-img five">
               </a>
               <div class="c-list">
@@ -364,13 +360,12 @@
                 <div class="btn-more">
                   <a href="#">VIEW ALL +</a>
                 </div>
-                <p><em>03/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
+                <p><em>05/05</em><span></span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i>
                 </p>
               </div>
-            </li>
-          </ul>
-        </div>
-      </article>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
     </section>
     <section class="diormag">
       <div>
@@ -380,7 +375,7 @@
     </section>
     <section id="mag-list">
 
-      <article id="mag-part01">
+      <article id="mag-part01" class="has-scroll-reveal animation fadeInUp">
         <div class="side one">
           <h1>DIOR <em>MAG</em></h1>
         </div>
@@ -419,7 +414,7 @@
           </div>
         </div>
       </article>
-      <article id="mag-part02">
+      <article id="mag-part02" class="has-scroll-reveal animation fadeInUp">
         <div class="list-two">
           <div class="mag-three">
             <a href="#" class="mag textimg"></a>
@@ -439,7 +434,7 @@
         </div>
       </article>
 
-      <article id="mag-part03">
+      <article id="mag-part03" class="has-scroll-reveal animation fadeInUp">
         <div class="side one">
           <h1>DIOR <em>MAG</em></h1>
         </div>
