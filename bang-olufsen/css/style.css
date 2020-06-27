@@ -63,28 +63,6 @@ transition: all 0.3s}
   }
 }
 
-/*main-header*/
-.wrap {position: relative;}
-#header {
-  color: #fff;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  margin: 0 auto;
-  height: 60px; width: 100%;
-  position: fixed;
-  z-index: 10;
-  height: 60px;
-}
-
-#header .top-logo {width: 168px; position: absolute;left: 50%; top: 50%; transform: translate(-50%, -50%)}
-#header .gnb {position: absolute; top: 100%; left: 50%; transform: translateX(-50%); width: 60%; height: 40px;} 
-#header .gnb ul li {float: left; width: 20%; font-weight: 200; transition: all 0.3s}
-#header .gnb ul li:hover {color: #8d8d8d;}
-#header .gnb ul li a {display: block; line-height: 3rem; text-align: center; font-size: 0.625rem;}
-#header .user-nav {position: absolute; right: 2%; top: 50%; transform: translateY(-50%);}
-#header .user-nav a {margin-left: 8px}
-#header .bars-btn { position: absolute; top: 50%; left: 2%; transform: translateY(-50%);}
-#header .bars-btn i {font-size: 20px; }
-#header.white {background: #fff; color: #000; overflow: hidden;}
 
 /*all-item*/
 #all-item {}
@@ -100,7 +78,7 @@ transition: all 0.3s}
 
 /*about-content*/
 
-#about {clear: both; display: table; clear: both; width: 100%; overflow: hidden; margin: 5% 0;}
+#about {clear: both; display: table; clear: both; width: 100%; overflow: hidden; margin: 10% 0;}
 #about article {display: table-cell; vertical-align: middle; text-align: center; }
 #about article .view-more {border:  2px solid #000; transition: all 0.3s}
 #about article .view-more:hover {background: #000; color: #fff;}

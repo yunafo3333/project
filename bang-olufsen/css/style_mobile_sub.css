@@ -9,7 +9,7 @@ header .store, .support, .investor {display: none;}
 header .gnb  {display: none;}
 
 /*all-item*/
-#all-item .item-list .list {width: 100%;}
+#all-item .item-list .list {width: 50%;}
 
 
 /*footer*/

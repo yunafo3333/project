@@ -17,34 +17,34 @@
   <link href="css/reset.css" rel="stylesheet" />
   <link href="css/common.css" rel="stylesheet" />
   <link href="css/style_sub.css" rel="stylesheet"/>
-  <link href="css/style_sub_mobile.css" rel="stylesheet" media="screen and (max-width : 850px)" />
+  <link href="css/style_mobile_sub.css" rel="stylesheet" media="screen and (max-width : 850px)" />
   
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.js"></script>  
+  <script src="js/gnb_common.js"></script>
   <script src="js/an_slide_script.js"></script>
-
 </head>
 
 <body>
   <div id="wrap">
 
     <header>
-      <secton class="inner">
+      <secton id="header">
         <div class="tnb">
-          <div class="bars-btn"><i class="fas fa-bars"></i></div>
-          <a href="index.html" class="logo"><img src="img/primary_logo_black.svg" alt="로고"></a>
+          <div class="bars-btn"><a href="#"><i class="fas fa-bars"></a></i></div>
+          <a href="index.html" class="top-logo"><img src="img/primary-logo-white.svg" class="primary-logo" alt="로고"></a>
 
           <div class="user-nav">
-            <span>INVESTOR</span>
-            <a href="#"><img src="img/icon_support_black.svg" alt="문의"></a>
-            <a href="#"><img src="img/icon_store_black.svg" alt="매장위치"></a>
-            <a href="#"><img src="img/cart_black.svg" alt="장바구니"></a>
+            <span><a href="#" class="investor">INVESTOR</a></span>
+            <a href="#"><img src="img/icon_support_white.svg"  class="support" alt="문의"></a>
+            <a href="#"><img src="img/icon_store_white.svg"  class="store" alt="매장위치"></a>
+            <a href="#"><img src="img/cart-white.svg"  class="cart" alt="장바구니"></a>
           </div>
         </div>
         <nav class="gnb">
           <ul>
-            <li><a href="#">SPEAKERS</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
             <li><a href="#">HEADPHONES</a></li>
             <li><a href="#">TELEVISIONS</a></li>
             <li><a href="#">ACCESSORIES</a></li>
@@ -82,7 +82,7 @@
         <ul class="item-list">
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/Beosound_A1_Natural__hero_img1.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/Beosound_A1_Natural_hero_img1.png" class="has-scroll-reveal animation fadeInUp" alt="Beosound_A1">
               <h2>Beosound A1 2nd Gen</h2>
               <p>Waterproof Bluetooth SpeakerL</p>
               <p>&nbsp;</p>
@@ -91,7 +91,7 @@
           </li>
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/Balance_her_natural_oak_img2.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/Balance_her_natural_oak_img2.png" class="has-scroll-reveal animation fadeInUp" alt="Balance oak">
               <h2>Beosound Balance with Google Assistant</h2>
               <p>Wireless, smart home</p>
               <p>&nbsp;</p>
@@ -100,7 +100,7 @@
           </li>
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/Balance_black_front_img3.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/Balance_black_front_img3.png" class="has-scroll-reveal animation fadeInUp" alt="Balance black">
               <h2>Beosound Balance</h2>
               <p>Innovative, wireless home speake</p>
               <p>&nbsp;</p>
@@ -109,7 +109,7 @@
           </li>
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/beoplay-a9-4-gen-hero-black_img4.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/beoplay-a9-4-genhero-black_img4.png" class="has-scroll-reveal animation fadeInUp" alt="beoplay-a9">
               <h2>Beoplay A9 with Google Assistan</h2>
               <p>Beauty and passion to your music</p>
               <p>&nbsp;</p>
@@ -118,7 +118,7 @@
           </li>
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/beolab-17-natural-grey-transparrent-19.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/beolab-17-natural-grey-transparrent-19.png" class="has-scroll-reveal animation fadeInUp" alt="beolab-17">
               <h2>Beolab 17</h2>
               <p>Wireless harmony Aluminium</p>
               <p>&nbsp;</p>
@@ -127,7 +127,7 @@
           </li>
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/Beosound_1_anthracite_-_front__img6.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/Beosound_1_anthracite_front_img6.png" class="has-scroll-reveal animation fadeInUp" alt="anthracite">
               <h2>Beosound 1 with Google Assistant</h2>
               <p>Add voice to the mix</p>
               <p>&nbsp;</p>
@@ -136,7 +136,7 @@
           </li>
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/Beosound_2_natural_brushed__img7.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/Beosound_2_natural_brushed__img7.png" class="has-scroll-reveal animation fadeInUp" alt="natural_brushed">
               <h2>Beosound 2 with Google Assistant</h2>
               <p>Add voice to the mix</p>
               <p>&nbsp;</p>
@@ -145,7 +145,7 @@
           </li>
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/edge_hero1_-__img8.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/edge_hero1_img8.png" class="has-scroll-reveal animation fadeInUp" alt="edge_hero1">
               <h2>Beosound Edge</h2>
               <p>Beauty and passion to your music</p>
               <p>&nbsp;</p>
@@ -154,7 +154,7 @@
           </li>
           <li class="list">
             <a href="#">
-              <img src="../bang-olufsen/img/item/beoplay-a9-4-gen-hero_img9.png" alt="Balance">
+              <img src="../bang-olufsen/img/item/beoplay-a9-4-gen-hero_img9.png" class="has-scroll-reveal animation fadeInUp" alt="gen-hero">
               <h2>Beoplay A9</h2>
               <p> Beauty and passion to your music</p>
               <p>&nbsp;</p>
@@ -178,8 +178,15 @@
                     <img src="img/kr.svg" alt="대한민국"></a></li>
                 <li><a href="#">South Korea</a></li>
               </ul>
-              <h1>LANGUAGE</h1>
-              <li><a href="#">English</a></li>
+              <form class="lang">
+                <select>
+                  <option value="한국(korea)">한국(korea)</option>
+                  <option value="미국(USA)">미국(USA)</option>
+                  <option value="중국(korea)">중국(korea)</option>
+                  <option value="호주(AUSTRALIA)">호주(AUSTRALIA)</option>
+                  <option value="영국(UNITED KINGDOM)">영국(UNITED KINGDOM)</option>
+                </select>
+              </form>
             </div>
             <div class="column two">
               <h1>CUSTOMER CARE</h1>
@@ -214,7 +221,13 @@
               </ul>
             </div>
             <div class="column five">
-              <span><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i><i class="fab fa-twitter"></i><i class="fab fa-youtube"></i><i class="fab fa-pinterest"></i></span>
+              <span class="sns-icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-pinterest"></i>
+              </span>
               <ul>
                 <li><a href="#">Download app for iOS</a></li>
                 <li><a href="#">Download app for Android</a></li>
@@ -225,5 +238,6 @@
         </article>
       </section>
     </footer>
+  </div>
   </div>
 </body></html>
