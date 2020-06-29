@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*reset*/
+html,body,div,p,ul,ol,li,dl,dt,dd,table,tr,th,td,caption,form,fieldset,legend,address,header,aside,nav,main,section,article,footer,figure,figcaption,h1,h2,h3,h4,h5,h6,blockquote,textarea {margin: 0;padding: 0;}
+header,nav,aside,section,article,main,footer,figure {display: block;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+a img {border: 0;}
+table {border-collapse: collapse;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+em, i, address, cite {font-style: normal;}
+caption, figcaption, .blind {
+    font-size: 0; 
+    line-height: 0;
+    overflow: hidden;
+    height: 0;
+    text-indent: -9999px;
+}
+.clear:before, .clear:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+

@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+body {font-size: 1.4rem; line-height: 1.5; word-break: keep-all;}
+
+#wrap {overflow: hidden;}
+
+
+/*common*/
+article {width: 100%; padding: 5em 2em;}
+section h2 {font-size: 3rem;}
+section h3 {font-size: 1.5rem;}
+section h3 span {font-size: 3rem;}
+section .text {font-size: 1.6rem;}
+section .tit {font-size: 2.6rem;}
+
+/*quick*/
+#quick {width: 100%; height: 50px; background: #222; position: absolute; transition: all 5s;}
+#quick a {display: inline-block; width: 60px; height: 50px; border-bottom: 0; line-height: 50px; font-size: 2.2rem;}
+#quick a:last-child {display: none;}
+#quick.on {position: fixed; top: auto; bottom: 0; z-index: 3;}
+
+/*header*/
+
+header {position: relative; height: 80px;}
+header h1 a {position: absolute; top: 50%; left: 20px; transform: translateY(-50%); width: 70px; height: 30px; background: url(../img/logo_b.png) no-repeat; background-size: contain; z-index: 20;}
+
+header .inner {position: fixed; top: 0; left: -100%; width: 80vw; height: 100vh; background: #fff; z-index: 10;}
+.inner .menu {top: 100px; left: 60%; width: 100%;}
+.inner .gnb {padding: 0; z-index: 20;}
+.inner .gnb li {width: 100%; text-align: left;}
+.inner .gnb li a {padding: 0; color: #222; font-size: 2.2rem; line-height: 2em; font-weight: 700;}
+.inner .gnb li a:after {content: '  ∨'; font-stretch: ultra-expanded;}
+header .gnb li:nth-child(1) a {border: 0;}
+
+header .gnb li:after {display: none;}
+
+header .menu-bar {display: block; width: 30px; height: 30px; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); transition: all 0.3s;}
+header .menu-bar > span {display: block; width: 100%; height: 2px; background: #222; position: absolute; top: 0; right: 10px; transition: all 0.5s;}
+header .menu-bar > span:nth-child(2) {top: 10px;}
+header .menu-bar > span:nth-child(3) {top: 20px;}
+header .menu-bar.on > span:nth-child(1) {transform: rotate(-45deg); top: 10px;}
+header .menu-bar.on > span:nth-child(2) {opacity: 0;}
+header .menu-bar.on > span:nth-child(3) {transform: rotate(45deg); top: 10px;}
+header .menu-bar.on > span {background: #222;}
+
+header.on {height: 60px;}
+
+
+/*main-visual*/
+#main-visual {height: calc(100vh - 140px);}
+#main-visual video {top: -80px; width: 360%;}
+#main-visual .tit-box {width: 80%;}
+#main-visual .tit-box h2 {color: #fff; font-size: 3rem; line-height: 1.3;}
+#main-visual .tit-box h2:first-child br {display: block;}
+#main-visual .tit-box .text br {display: none;}
+
+/*philo*/
+#philo {height: 70vh; background: url(../img/bg-brand.jpg) no-repeat center; background-size: cover; background-attachment: none;}
+#philo .text-group {width: 90%; transform: translate(-50%, -50%); text-align: center;}
+#philo .text-group br {display: none;}
+
+/*story*/
+#story article > div .text-group {width: 100%; margin-top: 2em; text-align: center;}
+#story article > div .text-group h2 {margin-bottom: 0.5em;}
+#story article > div .text-group br {display: none;}
+#story article > div .text-group .text {margin-bottom: 0; line-height: 1.5em;}
+#story article > div figure {width: 100%;}
+#story figure img {width: 100%;}
+#story .nature {display: flex; flex-direction: column;}
+#story .nature .text-group {order: 2; float: none;}
+#story .nature figure {order: 1; float: none;}
+#story .pink figure {float: none;}
+#story .pink .text-group {float: none;}
+#story .nature:after {display: none;}
+#story .pink:after {display: none;}
+
+/*product*/
+#product {height: 70vh; background: url(../img/bg-product-banner.jpg) no-repeat center; background-size: cover; background-attachment: none;}
+#product .text-group {width: 90%; transform: translate(-50%, -50%); text-align: center;}
+#product .text {margin-bottom: 0.5em; font-size: 1.6rem;}
+#product h2 {font-size: 2.4rem;}
+#product .view-all {padding: 1em; border: 0.5px solid #fff; font-size: 1.6rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer .inner {width: 100%; margin: 0 auto; padding: 3em 3em 5em; box-sizing: border-box; text-align: center; line-height: 1.7;}
+footer .f-logo {width: 80px; height: 50px; margin: 0 auto; background: url(../img/logo_w.png) no-repeat center; background-size: contain;}
+footer .left {float: none;}
+footer .left address {margin: 1.5em 0; font-size: 1.6rem; font-weight: 500; letter-spacing: -0.5px;}
+footer .left address span {margin-right: 0;}
+footer .left address span:after {display: none;}
+footer .left address br {display: block;}
+footer .left .copy {font-size: 1.3rem;}
+footer .right {display: none;}

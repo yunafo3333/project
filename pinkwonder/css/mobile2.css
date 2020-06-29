@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+body {font-size: 1.4rem; line-height: 1.5; word-break: keep-all;}
+
+#wrap {overflow: hidden;}
+
+/*common*/
+article {width: 100%; padding: 4em 2em;}
+section h3 {font-size: 3rem;}
+section .text {font-size: 1.6rem;}
+section .tit {font-size: 2.2rem; font-weight: 400;}
+
+/*quick*/
+#quick {width: 100%; height: 50px; background: #222; position: absolute; transition: all 5s;}
+#quick a {display: inline-block; width: 60px; height: 50px; border-bottom: 0; line-height: 50px; font-size: 2.2rem;}
+#quick a:last-child {display: none;}
+#quick.on {position: fixed; top: auto; bottom: 0; z-index: 3;}
+
+/*header*/
+
+header {height: 80px; border-bottom: 0.5px solid #ddd;}
+header h1 a {position: absolute; top: 50%; left: 20px; transform: translateY(-50%); width: 70px; height: 30px; background: url(../img/logo_b.png) no-repeat; background-size: contain; z-index: 20;}
+
+header .inner {position: fixed; top: 0; left: -100%; width: 80vw; height: 100vh; background: #fff; z-index: 10;}
+.inner .menu {top: 100px; left: 60%; width: 100%;}
+.inner .gnb {padding: 0; z-index: 20;}
+.inner .gnb li {width: 100%; text-align: left;}
+.inner .gnb li a {padding: 0; color: #222; font-size: 2.2rem; line-height: 2em; font-weight: 700;}
+.inner .gnb li a:after {content: '  ∨'; font-stretch: ultra-expanded;}
+header .gnb li:nth-child(2) a {border: 0;}
+
+header .gnb li:after {display: none;}
+
+header .menu-bar {display: block; width: 30px; height: 30px; position: absolute; top: 50%; right: 10px; transform: translateY(-50%); transition: all 0.3s;}
+header .menu-bar > span {display: block; width: 100%; height: 2px; background: #222; position: absolute; top: 0; right: 10px; transition: all 0.5s;}
+header .menu-bar > span:nth-child(2) {top: 10px;}
+header .menu-bar > span:nth-child(3) {top: 20px;}
+header .menu-bar.on > span:nth-child(1) {transform: rotate(-45deg); top: 10px;}
+header .menu-bar.on > span:nth-child(2) {opacity: 0;}
+header .menu-bar.on > span:nth-child(3) {transform: rotate(45deg); top: 10px;}
+header .menu-bar.on > span {background: #222;}
+
+
+header.on {height: 60px;}
+
+/*contents*/
+#contents .pro-list {overflow: hidden; margin-left: 0; margin-top: 4em;}
+#contents .pro-list li {float: none; width: 100%; margin-left: 0;}
+
+
+
+
+/*footer*/
+footer .inner {width: 100%; margin: 0 auto; padding: 3em 3em 5em; box-sizing: border-box; text-align: center; line-height: 1.7;}
+footer .f-logo {width: 80px; height: 50px; margin: 0 auto; background: url(../img/logo_w.png) no-repeat center; background-size: contain;}
+footer .left {float: none;}
+footer .left address {margin: 1.5em 0; font-size: 1.6rem; font-weight: 500; letter-spacing: -0.5px;}
+footer .left address span {margin-right: 0;}
+footer .left address span:after {display: none;}
+footer .left address br {display: block;}
+footer .left .copy {font-size: 1.3rem;}
+footer .right {display: none;}
