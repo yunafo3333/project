@@ -20,7 +20,7 @@ body {font: 16px 'Gothic A1', sans-serif; color: #585858; letter-spacing: 1px; }
 #header .gnb ul li a {display: block; line-height: 3rem; text-align: center; font-size: 0.625rem;}
 #header .user-nav {position: absolute; right: 2%; top: 50%; transform: translateY(-50%);}
 #header .user-nav a {margin-left: 8px}
-#header .bars-btn { position: absolute; top: 50%; left: 2%; transform: translateY(-50%);}
+#header .bars-btn {position: absolute; top: 50%; left: 2%; transform: translateY(-50%);}
 #header .bars-btn i {font-size: 20px; }
 #header.white {background: #fff; color: #000; overflow: hidden;}
 

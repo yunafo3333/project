@@ -564,6 +564,18 @@ margin-bottom: 50px;
 #campaign .c-img {
   background: url("../img/02.Campaign-1.jpg") no-repeat center / cover;
 }
+#campaign .c-img.two {
+  background: url("../img/02.Campaign-2.jpg") no-repeat center / cover;
+}
+#campaign .c-img.three {
+  background: url("../img/02.Campaign-3.jpg") no-repeat center / cover;
+}
+#campaign .c-img.four {
+  background: url("../img/02.Campaign-4.jpg") no-repeat center / cover;
+}
+#campaign .c-img.five {
+  background: url("../img/02.Campaign-5.jpg") no-repeat center / cover;
+}
 
 #campaign .c-img:before {
   position: absolute;
@@ -583,9 +595,7 @@ margin-bottom: 50px;
   background-color: #8a775a;
 }
 
-/* #campaign .c-img.two {
-  background: url("../img/02.Campaign-2.jpg") no-repeat center / cover;
-} */
+.swiper-button-prev, .swiper-button-next {color: inherit;}
 
 
 /*mag common*/

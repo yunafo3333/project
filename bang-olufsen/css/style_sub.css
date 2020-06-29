@@ -6,6 +6,15 @@ section article .text-box strong {font-size: 50px; letter-spacing: 2.5px; font-w
 
 /*header*/
 header {position: relative;}
+#header {
+  position: fixed;
+  color: #000;
+  background: l#fff;;
+  margin: 0 auto;
+  height: 60px; width: 100%;
+  z-index: 10;
+  height: 60px;
+}
 
 /*img,video {vertical-align: top;}*/
 
@@ -21,55 +30,7 @@ small,strong,em {
 section .banner-wrap h1 { display: inline-block; font-size: 50px;  border-bottom: 1px solid #000; color: #000; font-weight: 200; margin-left: 5%; margin-bottom: 5%}
 
 
-/*item header*/
-#all-item {text-align: center; font-size: 14px; }
-#all-item .cnb-container {
-  width: 100%;  
-  letter-spacing: 3px; 
-  font-weight: 500; 
-  color: #737373; 
-  margin-top: 30px; 
-  margin-bottom: 20px;
-}
-#all-item .gnb > ul {
-  font-weight: 700;
-  margin: 0 auto;
-  width: 96%;
-  height: 45px;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #ccc; 
-  border-bottom: 1px solid #ccc; 
-}
-#all-item .gnb > ul li {
-  display: inline-flex; 
-  height: 45px; line-height: 45px;  
-  padding: 0 5px; 
-  transition: all 0.2s
-} 
-#all-item .gnb li > a:hover {color: #000;}
-#all-item .gnb li:first-child {font-weight: 700; color: #000;border-bottom: 2px solid #000}
-#all-item .gnb li {position: relative; font-weight: 700; border-bottom: 0px solid #000; transition: all 0.2s}
 
-#all-item .gnb li > a:after {
-  position: absolute;
-  transform: translateX(-5%);
-  width: 0;
-  height: 2px;
-  opacity: 0;
-  background: #000;
-  display: block;
-  transition: all 0.5s;
-  content: '';
-}
-#all-item .gnb li > a:hover:after {opacity: 1; width: 100%;}
-
-#all-item .item-list {width: 100%; overflow: hidden; display: flex;flex-wrap: wrap; justify-content: space-between;}
-#all-item .item-list .list {width: 30%; background-color: #fafafa; margin-bottom: 5%;}
-#all-item .item-list .list h2 {font-size: 14px; color: #000; font-weight: 600;}
-#all-item .item-list .list:hover {background-color: #e2e2e2; transition: all 0.3s}
-#all-item .item-list .list p {color: #737373; font-weight: 200;}
-#all-item .item-list img {width: 100%;}
 
 
 
