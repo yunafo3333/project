@@ -1,7 +1,7 @@
 @charset "utf-8";
-
-
-
+/*header*/
+#header {overflow: hidden;}
+#header .investor, #header .support, #header .store {display: none;}
 
 /*header*/
 header {position: relative;}

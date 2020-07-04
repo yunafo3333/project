@@ -1,17 +1,27 @@
 @charset "utf-8";
 
-
-
-
-/*header*/
-header {position: relative;}
-header .store, .support, .investor {display: none;}
-header .gnb  {display: none;}
-
 /*all-item*/
-#all-item .item-list .list {width: 50%;}
+#all-item {}
+#all-item .item-list .list {width: 48%;}
+#all-item .cnb-container nav.gnb ul {
+    flex-direction: column;
+    height: 46px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+#all-item .cnb-container nav.gnb ul.on {
+    overflow: visible;
+    height: 228px;
+}
+
+#all-item .cnb-container nav.gnb ul li {  
+    flex-direction: row;
+    padding: 0 5px; 
+    transition: all 0.2s;
+    height: auto;
+    border-bottom: 1px solid #999;
+}
+#all-item .cnb-container nav.gnb ul li > a:hover:after {display: none;}
 
 
-/*footer*/
-footer .f-container .column {float: left; display: block; width: 50%; height: auto; }
-footer .f-container .five {width: 100%; text-align: center;}

@@ -14,45 +14,58 @@
   <!--CDN 링크 -->
 
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/reset_pc.css" rel="stylesheet" rel="stylesheet" media="screen and (min-width : 851px)" />
+  <link href="css/reset_mobile.css" rel="stylesheet" rel="stylesheet" media="screen and (max-width : 850px)" />
   <link href="css/common.css" rel="stylesheet" />
   <link href="css/style_sub.css" rel="stylesheet"/>
+  <link href="css/style_mobile.css" rel="stylesheet" media="screen and (max-width : 850px)" />
   <link href="css/style_mobile_sub.css" rel="stylesheet" media="screen and (max-width : 850px)" />
   
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
-  <script src="js/script.js"></script>  
   <script src="js/an_slide_script.js"></script>
+  <script src="js/script.js"></script>  
+
 
 </head>
 
 <body>
   <div id="wrap">
-
-    <header>
-      <secton id="header" class="white">
-        <div class="tnb">
-          <div class="bars-btn"><a href="#"><i class="fas fa-bars"></a></i></div>
-          <a href="index.html" class="top-logo"><img src="img/primary_logo_black.svg" class="primary-logo" alt="로고"></a>
-
-          <div class="user-nav">
-            <span><a href="#" class="investor">INVESTOR</a></span>
-            <a href="#"><img src="img/icon_support_black.svg"  class="support" alt="문의"></a>
-            <a href="#"><img src="img/icon_store_black.svg"  class="store" alt="매장위치"></a>
-            <a href="#"><img src="img/cart_black.svg"  class="cart" alt="장바구니"></a>
-          </div>
+    <secton id="header">
+      <div class="tnb">
+        <a href="#" class="menu bars-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <a href="index.html" class="top-logo"><img src="img/primary_logo_black.svg" class="primary-logo" alt="로고"></a>
+        <div class="user-nav">
+          <span><a href="#" class="investor">INVESTOR</a></span>
+          <a href="#"><img src="img/icon_support_black.svg" class="support" alt="문의"></a>
+          <a href="#"><img src="img/icon_store_black.svg" class="store" alt="매장위치"></a>
+          <a href="#"><img src="img/cart_black.svg" class="cart" alt="장바구니"></a>
         </div>
-        <nav class="gnb">
-          <ul>
-            <li><a href="speakers.html">SPEAKERS</a></li>
-            <li><a href="#">HEADPHONES</a></li>
-            <li><a href="#">TELEVISIONS</a></li>
-            <li><a href="#">ACCESSORIES</a></li>
-            <li><a href="#">STORIES</a></li>
-          </ul>
-        </nav>
-      </secton>
-    </header>
+      </div>
+      <nav class="gnb">
+        <ul>
+          <li><a href="speakers.html">SPEAKERS</a></li>
+          <li><a href="#">HEADPHONES</a></li>
+          <li><a href="#">TELEVISIONS</a></li>
+          <li><a href="#">ACCESSORIES</a></li>
+          <li><a href="#">STORIES</a></li>
+        </ul>
+      </nav>
+      <nav class="side-gnb-container">
+        <ul class="side-gnb">
+          <li><a href="#"><span>Speakers</span></a></li>
+          <li><a href="#"><span>Headphones</span></a></li>
+          <li><a href="#"><span>Televisions</span></a></li>
+          <li><a href="#"><span>Accessories</span></a></li>
+          <li><a href="#"><span>Stories</span></a></li>
+          <div class="login01"><a href="#"><span>Login/Register</span></a></div>
+        </ul>
+      </nav>
+    </secton>
     <!--//header-->
     <section id="main-visual">
       <article class="banner-wrap">
@@ -69,7 +82,7 @@
     <section id="all-item">
       <article class="cnb-container">
         <nav class="gnb">
-          <ul>
+          <ul class="gnb-inner">
             <li><a href="#">VIEW ALL</a></li>
             <li><a href="#">PORTABLE</a></li>
             <li><a href="#">MULTIROOM</a></li>

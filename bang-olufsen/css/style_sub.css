@@ -1,19 +1,16 @@
 @charset "utf-8";
-body {font: 16px 'Gothic A1', sans-serif; color: #585858; letter-spacing: 1px; }
-
-section article small {text-transform: uppercase; font-weight: 500; font-size: 14px; }
-section article .text-box strong {font-size: 50px; letter-spacing: 2.5px; font-weight: 100 } 
 
 /*header*/
 header {position: relative;}
 #header {
   position: fixed;
   color: #000;
-  background: l#fff;;
+  background: #fff;;
   margin: 0 auto;
   height: 60px; width: 100%;
   z-index: 10;
   height: 60px;
+  overflow: hidden;
 }
 
 /*img,video {vertical-align: top;}*/
@@ -24,10 +21,10 @@ small,strong,em {
   font-weight: 100;
 }
 #main-visual {width: 100%; margin: 0 auto; overflow: hidden; }
-#main-visual .banner-wrap {position: relative; background-color: #fafafa; width: 96%; margin: 0 auto; padding: 10% 0 0; box-sizing: border-box; height: 100%; overflow: hidden;}
+#main-visual .banner-wrap {position: relative; background-color: #fafafa; width: 96%; margin: 0 auto; padding-top: 100px; box-sizing: border-box; height: 100%; overflow: hidden;}
 #main-visual .banner-wrap .bg-all {background-image: url(../img/H4_home.png) cover center; width: 100%; height: auto;}
 #main-visual .banner-wrap .bg-all video {height:100%; width:100%; background-size: cover; }
-section .banner-wrap h1 { display: inline-block; font-size: 50px;  border-bottom: 1px solid #000; color: #000; font-weight: 200; margin-left: 5%; margin-bottom: 5%}
+section .banner-wrap h1 { display: inline-block; font-size: 50px;  border-bottom: 1px solid #000; color: #000; font-weight: 200; margin-left: 50px; margin-bottom: 50px}
 
 
 

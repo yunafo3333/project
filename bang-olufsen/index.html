@@ -10,21 +10,25 @@
   <meta name="author" content="leda portfolio bang-olufsen" />
   <title>bang-olufsen</title>
   <meta name="description" content="bang-olufsen by leda" />
-  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <!--CDN 링크 -->
 
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link href="css/reset.css" rel="stylesheet" />
+  <link href="css/reset_pc.css" rel="stylesheet" rel="stylesheet" media="screen and (min-width : 851px)" />
+  <link href="css/reset_mobile.css" rel="stylesheet" rel="stylesheet" media="screen and (max-width : 850px)" />
   <link href="css/common.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
   <link href="css/style_mobile.css" rel="stylesheet" media="screen and (max-width : 850px)" />
-  
+
   <!--script -->
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
-  <script src="js/script.js"></script>  
   <script src="js/gnb_common.js"></script>
   <script src="js/an_slide_script.js"></script>
+  <script src="js/script.js"></script>
+
 
 
 
@@ -32,31 +36,42 @@
 
 <body>
   <div id="wrap">
+    <secton id="header">
+      <div class="tnb">
+        <a href="#" class="menu bars-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <a href="index.html" class="top-logo"><img src="img/primary-logo-white.svg" class="primary-logo" alt="로고"></a>
 
-    <header>
-      <secton id="header">
-        <div class="tnb">
-          <div class="bars-btn"><a href="#"><i class="fas fa-bars"></a></i></div>
-          <a href="index.html" class="top-logo"><img src="img/primary-logo-white.svg" class="primary-logo" alt="로고"></a>
-
-          <div class="user-nav">
-            <span><a href="#" class="investor">INVESTOR</a></span>
-            <a href="#"><img src="img/icon_support_white.svg"  class="support" alt="문의"></a>
-            <a href="#"><img src="img/icon_store_white.svg"  class="store" alt="매장위치"></a>
-            <a href="#"><img src="img/cart-white.svg"  class="cart" alt="장바구니"></a>
-          </div>
+        <div class="user-nav">
+          <span><a href="#" class="investor">INVESTOR</a></span>
+          <a href="#"><img src="img/icon_support_white.svg" class="support" alt="문의"></a>
+          <a href="#"><img src="img/icon_store_white.svg" class="store" alt="매장위치"></a>
+          <a href="#"><img src="img/cart-white.svg" class="cart" alt="장바구니"></a>
         </div>
-        <nav class="gnb">
-          <ul>
-            <li><a href="speakers.html">SPEAKERS</a></li>
-            <li><a href="#">HEADPHONES</a></li>
-            <li><a href="#">TELEVISIONS</a></li>
-            <li><a href="#">ACCESSORIES</a></li>
-            <li><a href="#">STORIES</a></li>
-          </ul>
-        </nav>
-      </secton>
-    </header>
+      </div>
+      <nav class="gnb">
+        <ul>
+          <li><a href="speakers.html">SPEAKERS</a></li>
+          <li><a href="#">HEADPHONES</a></li>
+          <li><a href="#">TELEVISIONS</a></li>
+          <li><a href="#">ACCESSORIES</a></li>
+          <li><a href="#">STORIES</a></li>
+        </ul>
+      </nav>
+      <nav class="side-gnb-container">
+        <ul class="side-gnb">
+          <li><a href="#"><span>Speakers</span></a></li>
+          <li><a href="#"><span>Headphones</span></a></li>
+          <li><a href="#"><span>Televisions</span></a></li>
+          <li><a href="#"><span>Accessories</span></a></li>
+          <li><a href="#"><span>Stories</span></a></li>
+          <div class="login01"><a href="#"><i class="fas fa-user"></i> <span> Login/Register</span></a></div>
+        </ul>
+      </nav>
+    </secton>
     <!--//header-->
     <section id="main-visual">
       <article class="banner-wrap">
@@ -89,7 +104,8 @@
           <div class="text">
             <div class="text-box has-scroll-reveal animation fadeInUp"><small>FOR A LIMITED TIME</small>
               <strong>Now 25% off</strong>
-              <em>Beoplay H4: the over-ear headphones are incredibly <br>comfortable to wear and offer a battery life of up to 19 hours.</em>
+              <em>Beoplay H4: the over-ear headphones are incredibly <br>comfortable to wear and offer a battery life of
+                up to 19 hours.</em>
               <div class="btn">
                 <a href="#" class="view-more"><span>SHOP NOW</span></a>
               </div>
@@ -103,9 +119,11 @@
             <img class="bg" src="img/main/H4_home_promo.jpg" alt="광고">
           </div>
           <div class="text">
-            <div class="text-box has-scroll-reveal animation fadeInUp"><small>GET UP TO 15% OFF YOUR HOME SPEAKER SYSTEM</small>
+            <div class="text-box has-scroll-reveal animation fadeInUp"><small>GET UP TO 15% OFF YOUR HOME SPEAKER
+                SYSTEM</small>
               <strong>Your home. Your music.<br> Your way.</strong>
-              <em>Pick your favourite wireless speakers and save 10%<br> when you buy 2 or 15% if you buy 3 or more.</em>
+              <em>Pick your favourite wireless speakers and save 10%<br> when you buy 2 or 15% if you buy 3 or
+                more.</em>
               <div class="btn">
                 <a href="#" class="view-more"><span>DISCOVER MORE</span></a>
               </div>
@@ -230,4 +248,5 @@
     </footer>
   </div>
 </body>
+
 </html>
