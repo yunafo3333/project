@@ -116,7 +116,7 @@
                            <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
                            <div class="portfolio-overlay">
                               <div class="portfolio-item">
-                                 <a href="https://drive.google.com/file/d/1X2u7_usRQ5RqIeL0V44wPfvUhn3TeUqS/view?usp=sharing"><i class="fa fa-link"></i></a>
+                                 <a href="https://drive.google.com/file/d/1X2u7_usRQ5RqIeL0V44wPfvUhn3TeUqS/view?usp=sharing" target="_blank"><i class="fa fa-link"></i></a>
                                  <h2>ALL Project</h2>
                               </div>
                            </div>
@@ -221,52 +221,7 @@
    <script src="js/imagesloaded.min.js"></script>
    <script src="js/custom.js"></script>
 
-   <script>
-      'use strict';
 
-
-      resetCardPosition();
-      $(window).on('resize', function () {
-         resetCardPosition();
-      });
-
-      function resetCardPosition() {
-         var boxWidth = $('div.iso-box-wrapper').innerWidth();
-         var cardWidth = $('div.iso-box-wrapper > div:eq(0)').outerWidth();
-         var marginWidth = 20;
-         var colHeight = [];
-         var numColumn = 0;
-         var contentWidth = 0;
-
-         $('div.iso-box-wrapper > div').each(function (i) {
-            // 전체 컬럼수 미정
-            if (numColumn === 0 && (contentWidth + cardWidth) < boxWidth) {
-               $(this).css({
-                  'left': contentWidth,
-                  'top': 0
-               });
-               contentWidth += cardWidth + marginWidth;
-               colHeight[i] = $(this).outerHeight() + marginWidth;
-               $('div.iso-box-wrapper').css({
-                  'height': colHeight[i] + 'px'
-               });
-            } else {
-               if (numColumn === 0) numColumn = i;
-               var minHeight = Math.min.apply(Math, colHeight);
-               var minIndex = colHeight.indexOf(minHeight);
-
-               $(this).css({
-                  'left': minIndex * (cardWidth + marginWidth) + 'px',
-                  'top': minHeight + 'px'
-               });
-               colHeight[minIndex] += $(this).outerHeight() + marginWidth;
-               $('div.iso-box-wrapper').css({
-                  'height': colHeight[minIndex] + 'px'
-               });
-            }
-         });
-      }
-   </script>
 
 </body>
 
