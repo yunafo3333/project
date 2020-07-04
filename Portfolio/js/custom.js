@@ -13,6 +13,18 @@ jQuery(document).ready(function ($) {
         var $container = $('.iso-box-wrapper'),
             $imgs = $('.iso-box img');
 
+        $container.imagesLoaded(function () {
+
+            $container.isotope({
+                layoutMode: 'fitRows',
+                itemSelector: '.iso-box'
+            });
+
+            $imgs.load(function () {
+                $container.isotope('reLayout');
+            })
+
+        });
 
 
         $('.filter-wrapper li a').click(function () {
@@ -104,5 +116,10 @@ $(document).ready(function () {
         $(this).closest('.list-menu').toggleClass('reveal-modal');
     });
 
+
+    /* wow */
+    new WOW({
+        mobile: false
+    }).init();
 
 });

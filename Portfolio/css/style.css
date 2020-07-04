@@ -451,7 +451,7 @@ a.icon {
 #portfolio .portfolio-thumb {
   position: relative;
   overflow: hidden;
-  margin: 2%;
+  margin: 1%;
 } 
 
 #portfolio .portfolio-thumb .portfolio-overlay {
