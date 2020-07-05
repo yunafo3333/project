@@ -29,15 +29,7 @@ section article .text-box:after {position: absolute; display: inline-block; cont
 section article small {text-transform: uppercase; font-weight: 500; font-size: 1rem; }
 section article em {font-size: 1rem; }
 section article .text-box strong {font-size: 3rem; letter-spacing: 1px; font-weight: 100 } 
-section article .btn .view-more { 
-  display: inline-block; 
-  width: 240px; height: 40px; 
-  line-height: 40px; 
-  border: 2px solid #fff; 
-  box-sizing: border-box;
-  transition: all 0.3s
-}
-#wrap article .text .btn .view-more:hover {background-color: #fff; color: #000;}
+
 
 
 

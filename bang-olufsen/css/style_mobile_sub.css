@@ -2,7 +2,11 @@
 
 /*all-item*/
 #all-item {}
-#all-item .item-list .list {width: 48%;}
+
+#all-item .item-list .list {
+    width: 49%;
+}
+
 #all-item .cnb-container nav.gnb ul {
     flex-direction: column;
     height: 46px;
@@ -15,13 +19,14 @@
     height: 228px;
 }
 
-#all-item .cnb-container nav.gnb ul li {  
+#all-item .cnb-container nav.gnb ul li {
     flex-direction: row;
-    padding: 0 5px; 
+    padding: 0 5px;
     transition: all 0.2s;
     height: auto;
     border-bottom: 1px solid #999;
 }
-#all-item .cnb-container nav.gnb ul li > a:hover:after {display: none;}
 
-
+#all-item .cnb-container nav.gnb ul li>a:hover:after {
+    display: none;
+}

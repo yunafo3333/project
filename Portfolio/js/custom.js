@@ -114,8 +114,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    "use strict";
-
     $('.menu-container').each(function (document) {
         $(this).find('.circle').attr('menu-link', document);
         $(this).find('.list-menu').clone().appendTo('body').attr('menu-link', document);
