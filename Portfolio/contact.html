@@ -8,15 +8,16 @@
 	<meta name="author" content="Portfolio. leda" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="이다혜의 contact 페이지 입니다.">
-
 	<title>leda Portfolio | contact</title>
-
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 	<!-- CSS -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset_pc.css">
 	<link rel="stylesheet" href="css/ionicons.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/reset_pc.css">
+	<link rel="stylesheet" href="css/contact.css">
+
 
 	<!-- Google web font -->
 	<link
@@ -33,127 +34,82 @@
 
 
 	<!-- Navigation section -->
-	<div class="nav-container">
-		<nav class="nav-inner transparent">
+	<section id="contact" class="about-section border-d"></section>
 
-			<div class="navbar">
-				<div class="container">
-					<div class="row">
+	<nav class="nav-inner transparent">
 
-						<div class="brand">
-							<!-- <a href="index.html"></a> -->
-						</div>
-
-						<div class="navicon">
-							<div class="menu-container">
-
-								<div class="circle dark inline">
-									<i class="icon ion-navicon"></i>
-								</div>
-
-								<div class="list-menu">
-									<i class="icon ion-close-round close-iframe"></i>
-									<div class="intro-inner">
-										<ul id="nav-menu">
-											<li><a href="index.html">Home</a></li>
-											<li><a href="about.html">About</a></li>
-											<li><a href="contact.html">Contact</a></li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-		</nav>
-	</div>
-
-
-	<!-- Header section -->
-	<section id="header" class="header-one">
-		<div class="container">
-			<div class="row">
-			</div>
-		</div>
-	</section>
-
-
-	<!-- Contact section -->
-	<div id="colorlib-contact">
-		<div class="container">
-			<div class="row text-center">
-				<h2 class="bold">Contact</h2>
-			</div>
-			<div class="row">
-				<span>Contact</span>
-				<h2>Contact Me</h2>
-			</div>
-			<div class="row">
-				<div class="rotate">
-					<h2 class="heading">Contact</h2>
-				</div>
-			</div>
-			<div class="row">
+		<div class="navbar">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-4 animate-box">
-						<h3>My Address</h3>
-						<ul class="contact-info">
-							<li><span><i class="icon-map5"></i></span>88 West 21th Street, Suite 721 New York NY
-								10016</li>
-							<li><span><i class="icon-phone4"></i></span>+ 1235 2355 98</li>
-							<li><span><i class="icon-envelope2"></i></span><a href="#">info@yoursite.com</a></li>
-							<li><span><i class="icon-globe3"></i></span><a href="#">www.yoursite.com</a></li>
-						</ul>
+
+					<div class="brand">
+						<!-- <a href="index.html"></a> -->
 					</div>
-					<div class="row">
-						<div class="form-group">
-							<textarea name="" class="form-control" id="" cols="30" rows="7"
-								placeholder="Message"></textarea>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Name">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Email">
-						</div>
-						<div class="form-group">
-							<input type="submit" value="Send Message" class="btn btn-primary">
+
+					<div class="navicon">
+						<div class="menu-container">
+
+							<div class="circle dark inline">
+								<i class="icon ion-navicon"></i>
+							</div>
+
+							<div class="list-menu">
+								<i class="icon ion-close-round close-iframe"></i>
+								<div class="intro-inner">
+									<ul id="nav-menu">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="contact.html">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
+
+	</nav>
 
 
-	<!-- Footer section -->
-	<footer>
-		<div class="container">
-			<div class="row">
 
-				<div class="copyright">
-					<p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2020 leda Portfolio
-					</p>
-					<ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
-						<li><a href="#" class="fab fa-behance"></a></li>
-						<li><a href="#" class="fas fa-ellipsis-h"></a></li>
 
-					</ul>
-				</div>
+	</section>
+	<form id="form" class="gform topBefore only" method="POST" data-email="example@email.net"
+		action="https://script.google.com/macros/s/AKfycbxAN3nw3t5XdDbKZA94bGQcoz1slTLgDB2JAlHipw/exec">
 
+		<div class="form-elements">
+			<header>MINIMALISTIC FORM</header>
+			<!--submit/button-->
+
+			<input id="name" type="text" placeholder="NAME" />
+			<textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+			<input id="email" name="email" type="text" value="your.name@email.com">
+
+			<button id="submit" class="button-success">
+				<i class="fa fa-paper-plane"></i>&nbsp;Send
+			</button>
+			<div class="thankyou_message" style="display:none;">
+				<h2><em>Thanks</em> for contacting us again!
+					We will get back to you soon!</h2>
 			</div>
-		</div>
-	</footer>
+	</form>
+
+
+
+
+
 
 	<!-- Javascript -->
 	<script src="js/jquery.js"></script>
 	<script src="js/isotope.js"></script>
 	<script src="js/imagesloaded.min.js"></script>
 	<script src="js/custom.js"></script>
+
+	<script data-cfasync="false" src="form-submission-handler.js"></script>
+
 
 </body>
 
