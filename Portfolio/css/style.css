@@ -381,7 +381,7 @@ a.icon {
   padding-bottom: 100px;
 }
 
-#header .header-thumb {
+/* #header .header-thumb {
   background: #ffffff;
   border: 10px solid #f9f9f9;
   padding: 62px 20px 62px 20px;
@@ -393,7 +393,7 @@ a.icon {
 .header-four .header-thumb,
 .header-five .header-thumb {
   padding: 32px 20px 32px 20px !important;
-}
+} */
 
 .header-one, .header-two,
 .header-three, .header-four,
