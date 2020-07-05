@@ -14,7 +14,10 @@ html,body {
   overflow-x: hidden;
 }
 
-
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
 
 /* Typography */
 
@@ -77,8 +80,7 @@ img {
 }
 
 
-/* preloader styles
-/* ========================================== */
+/* preloader */
 .preloader {
     position: fixed;
     top: 0;
@@ -121,22 +123,16 @@ img {
 
 
 
-/* navigation styles
-/* ========================================== */
+/* navigation styles */
 .nav-container,
 nav {
   overflow: visible;
   transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
 }
 
 nav {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
 }
 
 nav a {
@@ -151,7 +147,6 @@ nav a {
   border-radius: 0;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
 }
 
 .brand {
@@ -159,7 +154,6 @@ nav a {
   padding: 30px 0 0;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
@@ -251,9 +245,7 @@ a.icon {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
 }
@@ -281,7 +273,6 @@ a.icon {
   border-radius: 50%;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
   cursor: pointer;
   z-index: 99;
   padding: 4px 0 0;
@@ -361,7 +352,6 @@ a.icon {
   background: rgba(0, 0, 0, 0.9);
   transition: all 0.6s ease;
   -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
   opacity: 0;
   z-index: -1;
 }
@@ -381,8 +371,7 @@ a.icon {
   cursor: pointer;
 }
 
-/* header section styles
-/* ========================================== */
+/* header section */
 #header {
   -webkit-background-size: cover;
   background-size: cover;
@@ -415,7 +404,7 @@ a.icon {
 }
 
 .header-one {
-  background: url('../images/header-bg.jpg') no-repeat;
+  background: url('../img/header-bg.jpg') no-repeat;
   height: 60vh !important;
   min-height: 520px;
   padding-top: 150px !important;
@@ -464,7 +453,6 @@ a.icon {
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
@@ -723,8 +711,7 @@ a.icon {
 
 
 
-/* footer section styles
-/* ========================================== */
+/* footer section */
 footer {
   background: #141414;
   padding-top: 120px;
@@ -818,17 +805,11 @@ footer {
 	bottom:0;
 	left:-10px;
 	right:-10px;
-	-webkit-transform:rotate(-4deg);
-	-moz-transform:rotate(-4deg);
-	-ms-transform:rotate(-4deg);
-	-o-transform:rotate(-4deg);
 	transform:rotate(-4deg);
 	background:#303F9F;
 	opacity:0;
 	visibility:hidden;
 	z-index:-1;
-	-webkit-transition:all .3s cubic-bezier(.785,.135,.15,.86);
-	-moz-transition:all .3s cubic-bezier(.785,.135,.15,.86);
 	transition:all .3s cubic-bezier(.785,.135,.15,.86);
 }
 .service:hover:after{
@@ -915,8 +896,6 @@ footer {
 	width:100%;
 	height:3px;
 	background:#FFF;
-	-webkit-transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
-	-moz-transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
 	transition:background 2.5s cubic-bezier(.785,.135,.15,.86);
 }
 
