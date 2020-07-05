@@ -1,0 +1,42 @@
+
+.bar-content {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #eee;
+  position: relative;
+  transition: all 0.3s ease-in-out forwards;
+}
+
+.bar {
+  width: 2px;
+  height: 30px;
+}
+
+.bar-title {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.bar-count {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  color: #A9A9A9;
+  font-size: 14px;
+}
+
+/* --- gradient --- */
+.black {
+  background-image: repeating-linear-gradient(-45deg, #000000 0, #000000 15px, #747474 15px, #747474 30px);
+}
+

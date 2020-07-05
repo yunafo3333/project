@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+
+/* PC용 CSS */
+@media screen and (min-width: 851px) {
+    
+    #layer-mask {position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1000;}
+    div.layer-popup {position: fixed; width: 600px; height: 400px; max-width: 90%; max-height: 90%; left: 50%; top: 50%; transform: translate(-50%, -50%); background: #ffffff; box-sizing: border-box; z-index: 1001; box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4); display: none;}
+    div.layer-popup div.header {position: absolute; left: 0; top: 0; width: 100%; line-height: 50px; background: rgba(0, 0, 0, 0.4);   box-sizing: border-box; }
+    div.layer-popup div.header h3 {font-size: 20px; color: #ffffff}
+    div.layer-popup div.header a.close {position: absolute; right: 30px; top: 0; font-size: 24px; color: #ffffff}
+    div.layer-popup div.body {height: 100%; box-sizing: border-box; overflow: auto; }
+    div.layer-popup div.body h4 {font-size: 18px; margin-top: 40px; margin-bottom: 20px; position: relative;}
+    div.layer-popup div.body h4:first-child {margin-top: 0;}
+    div.layer-popup div.body h4:before {content: ''; position: absolute; left: 0; top: 50%; transform: translate(0, -50%); width: 8px; height: 8px; border: 3px solid #000; border-radius: 20px;}
+    div.layer-popup div.body a {background-color: #000; color: #fff; display: inline-block; width: 100%; height: 20px; line-height: 20px; margin-top: 20px; padding: 10px 0;}
+
+}
+
+
+/* mobile용 CSS */
+@media screen and (max-width: 850px) {
+    
+    #layer-mask {position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); z-index: 1000;}
+    div.layer-popup {position: fixed; width: 90% !important; left: 5%; top: 8%; background: #ffffff; box-sizing: border-box;  z-index: 1001; box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4); display: none;}
+    div.layer-popup div.header {position: absolute; left: 0; top: 0; width: 100%; line-height: 50px; background: rgba(0, 0, 0, 0.6); color: #ffffff; box-sizing: border-box; }
+    div.layer-popup div.header h3 {font-size: 20px;}
+    div.layer-popup div.header a.close {position: absolute; right: 30px; top: 0; font-size: 24px;}
+    div.layer-popup div.body {height: 100%; box-sizing: border-box; overflow: auto;}
+    div.layer-popup div.body h4 {font-size: 18px; margin-top: 40px; margin-bottom: 20px;  position: relative;}
+    div.layer-popup div.body h4:first-child {margin-top: 0;}
+    div.layer-popup div.body h4:before {content: ''; position: absolute; left: 0; top: 50%; transform: translate(0, -50%); width: 8px; height: 8px; border: 3px solid #000; border-radius: 20px;}
+    div.layer-popup div.body a {background-color: #000; color: #fff; display: inline-block; width: 100%; height: 20px; line-height: 20px; margin-top: 20px; padding: 10px 0;}
+
+}

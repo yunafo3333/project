@@ -1,3 +1,18 @@
+$(document).ready(function(){
+    preventDefaultAnchor();
+    
+    
+});
+
+
+function preventDefaultAnchor() {
+    $(document).on('click', 'a[href="#"]', function(e) {
+        e.preventDefault();
+    });
+}
+
+
+
 /* jQuery Pre loader */
 $(window).load(function () {
     $('.preloader').fadeOut(1000);

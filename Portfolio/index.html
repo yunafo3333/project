@@ -13,14 +13,17 @@
 
 
    <!-- CSS -->
-   <link rel="stylesheet" href="css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/reset_pc.css">
    <link rel="stylesheet" href="css/ionicons.min.css">
    <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/reset_pc.css">
+   <link rel="stylesheet" href="css/popup.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-   <!-- Google web font -->
+
+   <!-- web font -->
    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet">
+
 </head>
 
 <body>
@@ -41,7 +44,7 @@
                <div class="row">
 
                   <div class="brand">
-                     <a href="index.html"> LEDA </a>
+                     <a href="index.html"> </a>
                   </div>
 
                   <div class="navicon">
@@ -79,11 +82,6 @@
       <div class="container">
          <div class="row">
 
-            <!-- <div class="header-thumb">
-               <h1 class="wow fadeIn" data-wow-delay="1.6s">Lorem ipsum dolor</h1>
-               <h3 class="wow fadeInUp" data-wow-delay="1.9s">Six HTML pages included</h3>
-            </div> -->
-
          </div>
       </div>
    </section>
@@ -107,77 +105,146 @@
                </ul>
 
                <!-- iso box section -->
+
+
                <div class="iso-box-section fadeInUp" data-wow-delay="1s">
 
                   <div class="iso-box-wrapper">
 
-                     <div class="iso-box publishing web editorial photoshop">
+                     <div class="iso-box web photoshop">
                         <div class="portfolio-thumb card">
-                           <img src="img/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
-                           <div class="portfolio-overlay">
-                              <div class="portfolio-item">
-                                 <a href="https://drive.google.com/file/d/1hpnzuhYg9jLLOXsnnHIQ0eBMTic0EzDS/view?usp=sharing"><i class="fa fa-link"></i></a>
-                                 <h2>ALL Project</h2>
+                           <img src="img/portfolio-thumb-img1.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup1', this, 500, 500);">                              <div class="portfolio-item">
+                                 <i class="fa fa-link"></i>
+                                 <h2>Project one</h2>
                               </div>
                            </div>
                         </div>
                      </div>
 
-                     <div class="iso-box publishing web">
+                     <div class="iso-box web photoshop">
                         <div class="portfolio-thumb card">
-                           <img src="img/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
-                           <div class="portfolio-overlay">
+                           <img src="img/portfolio-thumb-img2.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup2', this, 500, 500);">
                               <div class="portfolio-item">
-                                 <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                 <i class="fa fa-link"></i>
                                  <h2>Project Two</h2>
                               </div>
                            </div>
                         </div>
                      </div>
 
-                     <div class="iso-box template graphic">
+                     <div class="iso-box web publishing photoshop">
                         <div class="portfolio-thumb card">
-                           <img src="img/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
-                           <div class="portfolio-overlay">
+                           <img src="img/portfolio-thumb-img3.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup3', this, 500, 500);">
                               <div class="portfolio-item">
-                                 <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                 <i class="fa fa-link"></i>
                                  <h2>Project Three</h2>
                               </div>
                            </div>
                         </div>
                      </div>
 
-                     <div class="iso-box graphic template">
+                     <div class="iso-box editorial">
                         <div class="portfolio-thumb card">
-                           <img src="img/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
-                           <div class="portfolio-overlay">
+                           <img src="img/portfolio-thumb-img4.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup4', this, 500, 500);">
                               <div class="portfolio-item">
-                                 <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                 <i class="fa fa-link"></i>
                                  <h2>Project Four</h2>
                               </div>
                            </div>
                         </div>
                      </div>
 
-                     <div class="iso-box photoshop branding">
+                     <div class="iso-box photoshop web">
                         <div class="portfolio-thumb card">
-                           <img src="img/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
-                           <div class="portfolio-overlay">
+                           <img src="img/portfolio-thumb-img5.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup5', this, 500, 500);">
                               <div class="portfolio-item">
-                                 <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                 <i class="fa fa-link"></i>
                                  <h2>Project Five</h2>
                               </div>
                            </div>
                         </div>
                      </div>
 
-                     <div class="iso-box graphic branding">
+                     <div class="iso-box publishing">
                         <div class="portfolio-thumb card">
-                           <img src="img/portfolio-img6.jpg" class="img-responsive" alt="Portfolio">
-                           <div class="portfolio-overlay">
+                           <img src="img/portfolio-thumb-img6.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup6', this, 500, 500);">
                               <div class="portfolio-item">
-                                 <a href="single-project.html"><i class="fa fa-link"></i></a>
+                                 <i class="fa fa-link"></i>
                                  <h2>Project Six</h2>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="iso-box publishing">
+                        <div class="portfolio-thumb card">
+                           <img src="img/portfolio-thumb-img7.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup7', this, 500, 500);">
+                              <div class="portfolio-item">
+                                 <i class="fa fa-link"></i>
+                                 <h2>Project Seven</h2>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="iso-box editorial">
+                        <div class="portfolio-thumb card">
+                           <img src="img/portfolio-thumb-img8.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup8', this, 500, 500);">
+                              <div class="portfolio-item">
+                                 <i class="fa fa-link"></i>
+                                 <h2>Project08</h2>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="iso-box editorial">
+                        <div class="portfolio-thumb card">
+                           <img src="img/portfolio-thumb-img9.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup9', this, 500, 500);">
+                              <div class="portfolio-item">
+                                 <i class="fa fa-link"></i>
+                                 <h2>Project09</h2>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="iso-box editorial">
+                        <div class="portfolio-thumb card">
+                           <img src="img/portfolio-thumb-img10.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup10', this, 500, 500);">
+                              <div class="portfolio-item">
+                                 <i class="fa fa-link"></i>
+                                 <h2>Project10</h2>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="iso-box editorial">
+                        <div class="portfolio-thumb card">
+                           <img src="img/portfolio-thumb-img11.jpg" class="img-responsive" alt="Portfolio">
+                           <div class="portfolio-overlay btn"
+                              onclick="openLayerPopup('#layer-popup11', this, 500, 500);">
+                              <div class="portfolio-item">
+                                 <i class="fa fa-link"></i>
+                                 <h2>Project10</h2>
                               </div>
                            </div>
                         </div>
@@ -189,6 +256,133 @@
             </div>
 
 
+         </div>
+         <div id="layer-popup1" class="layer-popup">
+            <div class="header">
+               <h3>스포티파이 리디자인</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img1.jpg" alt="스포티파이 리디자인"></div>
+               <div class="pop"><img src="img/portfolio-img1_2.jpg" alt="스포티파이 리디자인2"></div>
+               <div><a href="https://www.behance.net/gallery/98978845/re-design-spotify-neumorphism-concept" target="_blank">MORE VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup2" class="layer-popup">
+            <div class="header">
+               <h3>beats 반응형 리디자인</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img2.jpg" alt="beats 반응형 리디자인"></div>
+               <div><a href="https://www.behance.net/gallery/100095057/Beats-by-Dr-Dre-Responsive-Web-Redesign" target="_blank">MORE VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup3" class="layer-popup">
+            <div class="header">
+               <h3>디올 웹사이트 리디자인</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img3.jpg" alt="디올 웹사이트 리디자인"></div>
+               <div><a href="https://yunafo3333.github.io/project/dior" target="_blank">퍼블리싱 적용한 웹으로 보기</a></div>
+               <div><a href="https://www.behance.net/gallery/100095577/dior-Static-Web-Redesign" target="_blank">MORE VIEW</a></div>
+               
+            </div>
+         </div>
+         <div id="layer-popup4" class="layer-popup">
+            <div class="header">
+               <h3>파스쿠찌 관련 오프라인 이벤트</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img4.jpg" alt="파스쿠찌"></div>
+               <div class="pop"><img src="img/portfolio-img4_1.jpg" alt="파스쿠찌"></div>
+               <div class="pop"><img src="img/portfolio-img4_2.jpg" alt="파스쿠찌"></div>
+               <div class="pop"><img src="img/portfolio-img4_3.jpg" alt="파스쿠찌"></div>
+               <div class="pop"><img src="img/portfolio-img4_4.jpg" alt="파스쿠찌"></div>
+               <div class="pop"><img src="img/portfolio-img4_5.jpg" alt="파스쿠찌"></div>
+               <div><a href="https://www.behance.net/gallery/98970663/app-event" target="_blank">MORE VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup5" class="layer-popup">
+            <div class="header">
+               <h3>파스쿠찌 관련 앱 이벤트</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img5.jpg" alt="파스쿠찌"></div>
+               <div class="pop"><img src="img/portfolio-img5_1.jpg" alt="파스쿠찌"></div>
+               <div><a href="https://www.behance.net/gallery/98970663/app-event" target="_blank">MORE VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup6" class="layer-popup">
+            <div class="header">
+               <h3>bang & olufsen 퍼블리싱</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img6.jpg" alt="bang & olufsen 퍼블리싱"></div>
+               <div class="pop"><img src="img/portfolio-img6_2.jpg" alt="bang & olufsen 퍼블리싱2"></div>
+               <div><a href="https://yunafo3333.github.io/project/bang-olufsen" target="_blank">WEB VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup7" class="layer-popup">
+            <div class="header">
+               <h3>solaseado 퍼블리싱</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img7.jpg" alt="solaseado 퍼블리싱"></div>
+               <div class="pop"><img src="img/portfolio-img7_2.jpg" alt="solaseado 퍼블리싱2"></div>
+               <div><a href="https://yunafo3333.github.io/project/solaseado" target="_blank">WEB VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup8" class="layer-popup">
+            <div class="header">
+               <h3>national geographic 도록 제작</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img8.jpg" alt="solaseado 퍼블리싱"></div>
+               <div class="pop"><img src="img/portfolio-img8_2.jpg" alt="solaseado 퍼블리싱2"></div>
+               <div><a href="https://www.behance.net/gallery/98969497/_" target="_blank">MORE VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup9" class="layer-popup">
+            <div class="header">
+               <h3>세븐일레븐 작업물01</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img9.jpg" alt="solaseado 퍼블리싱"></div>
+               <div class="pop"><img src="img/portfolio-img9_2.jpg" alt="solaseado 퍼블리싱2"></div>
+               <div><a href="https://www.behance.net/gallery/98969497/_" target="_blank">MORE VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup10" class="layer-popup">
+            <div class="header">
+               <h3>세븐일레븐 작업물02</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img10.jpg" alt="solaseado 퍼블리싱"></div>
+               <div class="pop"><img src="img/portfolio-img10_2.jpg" alt="solaseado 퍼블리싱2"></div>
+               <div><a href="https://www.behance.net/gallery/98969497/_" target="_blank">MORE VIEW</a></div>
+            </div>
+         </div>
+         <div id="layer-popup11" class="layer-popup">
+            <div class="header">
+               <h3>세븐일레븐 작업물03</h3>
+               <a href="#" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <div class="body">
+               <div class="pop"><img src="img/portfolio-img11_0.jpg" alt="세븐일레븐 특선집 시안1"></div>
+               <div class="pop"><img src="img/portfolio-img11_1.jpg" alt="세븐일레븐 특선집 시안1_2"></div>
+               <div class="pop"><img src="img/portfolio-img11_2.jpg" alt="세븐일레븐 특선집 시안2"></div>
+               <div class="pop"><img src="img/portfolio-img11_3.jpg" alt="세븐일레븐 특선집 시안2_2"></div>
+               <div><a href="https://www.behance.net/gallery/98969497/_" target="_blank">MORE VIEW</a></div>
+            </div>
          </div>
       </div>
    </section>
@@ -202,11 +396,9 @@
                <p class="wow fadeInUp" data-wow-delay="0.3s">Copyright © 2020 leda Portfolio
                </p>
                <ul class="social-icon wow fadeInUp" data-wow-delay="0.6s">
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-dribbble"></a></li>
-                  <li><a href="#" class="fa fa-behance"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="#" class="fab fa-behance"></a></li>
+                  <li><a href="#" class="fas fa-ellipsis-h"></a></li>
+
                </ul>
             </div>
 
@@ -220,6 +412,58 @@
    <script src="js/isotope.js"></script>
    <script src="js/imagesloaded.min.js"></script>
    <script src="js/custom.js"></script>
+
+   <script>
+      'use strict';
+      //팝업창
+      function openLayerPopup(selector, returnElement, width, height) {
+         // 창크기 조정
+         if (width === undefined) width = 500;
+         if (height === undefined) height = auto;
+         $(selector).css({
+            'width': width + 'px',
+            'height': height + 'px'
+         });
+
+         // 필요요소 추가 및 창 표시
+         $(selector).before('<div id="layer-mask" tabindex="0"></div>').append('<a href="#" class="return"></a>').attr({
+            'tabIndex': 0
+         }).css({
+            'display': 'block'
+         });
+         $(selector).find('div.footer img').attr({
+            'tabIndex': 0
+         });
+
+         //포커스 이동 및 차단
+         $(selector).trigger('focus');
+         $('#layer-mask').on('focus', function () {
+            $(selector).find('div.footer img').trigger('focus');
+         });
+         $(selector).find('a.return').on('focus', function () {
+            $(selector).trigger('focus');
+         });
+         $('body').css({
+            'overflow': 'hidden'
+         }); // 본문 스크롤 차단
+
+         // 창닫기
+         $('#layer-mask').on('click', function () {
+            $(selector).find('a.close').trigger('click')
+         });
+         $(selector).find('a.close').one('click', function () {
+            $(returnElement).trigger('focus');
+            $('#layer-mask').remove();
+            $(selector).find('a.return').remove();
+            $(selector).removeAttr('tabIndex').css({
+               'display': 'none'
+            });
+            $('body').css({
+               'overflow': 'initial'
+            }); // 본문 스크롤 초기화
+         });
+      }
+   </script>
 
 
 </body>
