@@ -1,17 +1,47 @@
 @charset "utf-8";
-/*header*/
-#header {overflow: hidden;}
-#header .investor, #header .support, #header .store {display: none;}
 
 /*header*/
-header {position: relative;}
-header .store, .support, .investor {display: none;}
-header .gnb  {display: none;}
+#header {
+    overflow: hidden;
+}
+
+#header .investor,
+#header .support,
+#header .store {
+    display: none;
+}
+
+/*header*/
+header {
+    position: relative;
+}
+
+header .store,
+.support,
+.investor {
+    display: none;
+}
+
+header .gnb {
+    display: none;
+}
+
 
 /*all-item*/
-#all-item .item-list .list {width: 100%;}
+#all-item .item-list .list {
+    width: 100%;
+}
 
 
 /*footer*/
-footer .f-container .column {float: left; display: block; width: 50%; height: auto; }
-footer .f-container .five {width: 100%; text-align: center;}
+footer .f-container .column {
+    float: left;
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+footer .f-container .five {
+    width: 100%;
+    text-align: center;
+}

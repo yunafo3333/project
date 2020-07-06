@@ -20,7 +20,7 @@ section article .text-box strong {
 
 .view-more {
   display: inline-block;
-  width: 25%;
+  width: 250px;
   height: 40px;
   line-height: 40px;
   border: 2px solid #fff;
