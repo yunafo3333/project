@@ -858,6 +858,10 @@ textarea:hover::placeholder {
     width: 50%;
   }
 
+  #contact-container input {
+    width: 80%;
+  }
+
 
 
 }
@@ -870,4 +874,9 @@ textarea:hover::placeholder {
   #portfolio div.iso-box {
     width: 100%;
   }
+
+  #contact-container input {
+    width: 80%;
+  }
+
 }
