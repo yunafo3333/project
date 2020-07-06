@@ -23,7 +23,8 @@
     flex-direction: row;
     padding: 0 5px;
     transition: all 0.2s;
-    height: auto;
+    height: 46px;
+    line-height: 46px;
     border-bottom: 1px solid #999;
 }
 
