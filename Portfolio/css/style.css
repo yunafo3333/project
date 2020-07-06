@@ -827,11 +827,6 @@ textarea:hover::placeholder {
     padding-top: 80px !important;
   }
 
-  #about .col-md-4,
-  #single-project .col-md-3 {
-    padding-bottom: 32px;
-  }
-
   #portfolio div.iso-box {
     width: 50%;
   }
@@ -861,8 +856,6 @@ textarea:hover::placeholder {
   #contact-container input {
     width: 80%;
   }
-
-
 
 }
 
