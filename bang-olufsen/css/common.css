@@ -40,7 +40,7 @@ section article .text-box strong {
 
 #header {
   position: fixed;
-  color: #fff;
+  color: #000;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   margin: 0 auto;
   height: 60px;
@@ -48,6 +48,11 @@ section article .text-box strong {
   z-index: 10;
   height: 60px;
 }
+
+div#wrap.index #header {
+  color: #fff;
+}
+
 
 #header .tnb {
   position: relative;

@@ -35,7 +35,7 @@
 </head>
 
 <body>
-  <div id="wrap">
+  <div id="wrap" class="index">
     <secton id="header">
       <div class="tnb">
         <a href="#" class="menu bars-btn">
@@ -248,5 +248,25 @@
     </footer>
   </div>
 </body>
+
+<script>
+
+    $('.menu').on('click', function () {
+        $(this).toggleClass('on');
+
+        if ($('.menu').is('.on')) {
+            $('.side-gnb-container').stop().animate({
+                left: 0
+            });
+            $(".menu.bars-btn span").stop().css({"background-color": "#fff"}); 
+        } else {
+            $('.side-gnb-container').stop().animate({
+                left: '-100%'
+            });
+            $(".menu.bars-btn span").stop().css({"background-color": "#000"}); 
+
+        }
+    });
+</script>
 
 </html>

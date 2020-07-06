@@ -1,23 +1,10 @@
 @charset "utf-8";
 
-/*header*/
-header {
-  position: relative;
-}
 
 #header {
-  position: fixed;
-  color: #000;
   background: #fff;
-  ;
-  margin: 0 auto;
-  height: 60px;
-  width: 100%;
-  z-index: 10;
-  height: 60px;
   overflow: hidden;
 }
-
 
 /*img,video {vertical-align: top;}*/
 
