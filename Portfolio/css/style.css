@@ -795,13 +795,13 @@ textarea:hover::placeholder {
 
 #contact-container header {
   margin-bottom: 25px;
-  font-size: 2.3em;
+  font-size: 2rem;
   text-align: center;
   letter-spacing: 7px;
 }
 #contact-container header > p {
   margin-top: 5px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 
@@ -861,6 +861,9 @@ textarea:hover::placeholder {
   #contact-container input {
     width: 80%;
   }
+  #contact-container .button-success {
+    width: 50%;
+  }
 
 }
 
@@ -873,8 +876,6 @@ textarea:hover::placeholder {
     width: 100%;
   }
 
-  #contact-container input {
-    width: 80%;
-  }
+
 
 }
