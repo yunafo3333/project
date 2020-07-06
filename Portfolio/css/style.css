@@ -798,7 +798,10 @@ textarea:hover::placeholder {
   text-align: center;
   letter-spacing: 7px;
 }
-
+#contact-container header > p {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
 
 
 
