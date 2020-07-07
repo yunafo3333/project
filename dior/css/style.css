@@ -574,6 +574,17 @@ margin-bottom: 50px;
   font-size: 1.25rem;
 }
 
+#campaign .c-list h1 {
+  margin-bottom: 5px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#campaign .c-list .btn-more {
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
+
 #campaign .c-img {
   background: url("../img/02.Campaign-1.jpg") no-repeat center / cover;
 }
