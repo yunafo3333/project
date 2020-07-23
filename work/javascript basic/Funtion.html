@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="demo01"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo01").innerHTML = "Hello World!";
+        }
+        myFunction();
+    </script>
+
+    <p id="demo02">Display the result here.</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo02").innerHTML = "Hello World!";
+        }
+        myFunction();
+    </script>
+
+    <p id="demo03">Display the result here.</p>
+
+    <script>
+        function myFunction(name) {
+            return "Hello " + name;
+        }
+        document.getElementById("demo03").innerHTML = myFunction("John");
+    </script>
+
+    <p id="demo04"></p>
+
+    <script>
+        function myFunction() {
+            return 5 * 5;
+        }
+        document.getElementById("demo04").innerHTML = myFunction();
+    </script>
+
+
+
+
+
+</body>
+
+</html>
